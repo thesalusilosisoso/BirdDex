@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BirdDex</title>
-
 <link rel="stylesheet" href="style.css">
 <script src="./birds.js" defer></script>
 <script src="./search.js" defer></script>
@@ -15,7 +14,6 @@
 <!-- INTRO SCREEN -->
 <div id="intro-screen">
 <div class="intro-content">
-
 <h1 class="intro-title">
  BirdDex
 <img src="./assets/birdlogo11.svg" alt="logo" class="intro-logo">
@@ -26,13 +24,19 @@
 <button id="info-btn">What's BirdDex?</button>
 
 <div id="help-text" class="hidden">
-<p>• Click a bird to view details</p>
+        <p>• (Home page) Click a bird to view their details</p>
+        <p>• (Bird details page) Use arrows to navigate</p>
+        <p>• (Bird details page) Click sound button to hear their chirps</p>
+        <p>• (Bird details page) Bird abilities and description are interactable</p>
+        <p>• (Home page) Click the 'underlined A' to filter search</p>
+      <p>• (Bird details page) To find birds of similar typings, click on the typings below a bird's illustration! </p>
+      <p>• (Bird details page) To see real images of the bird,click on the illustration of the bird</p>
+        <p>• (Home page) if unsure on which bird to learn about, the 'Randomise!' button will give you a random bird</p>
 </div>
 
 <div id="info-text" class="hidden">
-<p>BirdDex is your structured bird database.</p>
+      <p>BirdDex! is your structured bird database concept that blends real-world species info with game-like elements. Each bird entry includes scientific details (like weight, wingspan, and classification) alongside stylized features such as abilities and stats (e.g., speed, agility, song). It works like a mix between a field guide and a collectible index, making it both informative and interactive—almost like a Pokédex, but specifically for birds.</p>
 </div>
-
 </div>
 </div>
 
@@ -41,59 +45,59 @@
 <header class="header-home">
 <div class="container">
 
-<!-- LOGO -->
 <a href="index.html" class="logo-wrapper">
 <img src="./assets/birdlogo11.svg" alt="bird_logo" height="6%" width="6%">
 <h1>BirdDex!</h1>
 </a>
 
-<!-- SURPRISE BUTTON -->
-<button id="surpriseBtn">🔄 Surprise Me!</button>
 
-<!-- SEARCH -->
-<div class="search-wrap">
-<img src="./assets/search.svg" alt="search icon" class="search-icon" height="30px">
+        <div id="help-overlay" class="help-overlay">
+          <div class="help-modal">
+            <h3>How to Use</h3>
+            <p>• Click a bird to view details</p>
+            <p>• Use filters to search</p>
+            <p>• Click types to find similar birds</p>
+          </div>
+        </div>
 
-<input
-type="text"
-class="search-input body3-fonts"
-placeholder="Search"
-id="search-input"
->
 
-<img
-src="./assets/cross.svg"
-alt="clear"
-class="search-close-icon"
-id="search-close-icon"
-height="30px"
->
-</div>
+<div class="top-bar">
 
-<!-- SORT -->
-<div class="sort-wrapper">
+  <!-- SEARCH -->
+  <div class="search-wrap">
+    <img src="./assets/search.svg" alt="search icon" height="30" width="30" class="search-icon"/>
+    <input type="text" class="search-input body3-fonts" placeholder="Search" id="search-input"/>
+    <img src="./assets/cross.svg" alt="cross icon" class="search-close-icon" id="search-close-icon" height="30" width="30"/>
+  </div>
 
-<div class="sort-wrap">
-<img src="./assets/sorting.svg" alt="sort" id="sort-icon" height="30px">
-</div>
+  <!-- SORT / FILTER -->
+  <div class="sort-wrapper">
+    <div class="sort-wrap">
+      <img src="./assets/sorting.svg" alt="sort-icon" height="30" width="30" id="sort-icon"/>
+    </div>
 
-<div class="filter-wrapper">
+    <div class="filter-wrapper">
+      <!-- keep everything inside unchanged -->
 
+              <!-- NUMBER -->
 <div>
-<input type="radio" id="number" name="filters" value="number" checked>
+<input type="radio" id="number" name="filters" value="number" checked/>
 <label for="number">Number</label>
 </div>
 
+              <!-- NAME -->
 <div>
-<input type="radio" id="name" name="filters" value="name">
+<input type="radio" id="name" name="filters" value="name" />
 <label for="name">Name</label>
 </div>
 
+              <!-- TYPE -->
 <div>
-<input type="checkbox" id="type" name="filters" value="type">
+<input type="checkbox" id="type" name="filters" value="type"/>
 <label for="type">Type</label>
 </div>
 
+              <!-- TYPE DROPDOWN -->
 <div id="type-dropdown" class="type-dropdown">
 <select id="type-select">
 <option value="">All</option>
@@ -120,23 +124,20 @@ height="30px"
 
 </div>
 </div>
+        </div>
 
+</div>
 </div>
 </header>
 
-
-<!-- BIRD LIST -->
 <section class="bird-list">
 <div class="container">
 <div class="list-wrapper"></div>
 </div>
-
 <div id="not-found-message">Bird not found D:</div>
 </section>
 
 </main>
-
-<button id="help-toggle" class="help2-btn">?</button>
 
 </body>
 </html>
