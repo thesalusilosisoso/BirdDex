@@ -162,119 +162,122 @@ function displayBirds(birds) {
 
 
 // ===============================
-// SEARCH + FILTER LOGIC
+// SEARCH + FILTER SYSTEM (CLEAN)
 // ===============================
-function handleSearch() {
-  const searchTerm = searchInput.value.toLowerCase().trim();
-  let filteredBirds = [...allBirds];
 
-const helpToggle = document.querySelector("#help-toggle");
-const helpOverlay = document.querySelector("#help-overlay");
+// central state
+const state = {
+  search: "",
+  sort: "number",   // "number" | "name"
+  type: ""          // selected type
+};
 
-helpToggle.addEventListener("click", () => {
-  helpOverlay.classList.remove("hidden");
-});
+// ===============================
+// MAIN UPDATE FUNCTION
+// ===============================
+function updateDisplay() {
+  if (!allBirds.length) return;
 
-helpOverlay.addEventListener("click", (e) => {
-  if (e.target === helpOverlay) {
-    helpOverlay.classList.add("hidden");
-  }
-});
-
-// OPEN
-helpBtn2.addEventListener("click", () => {
-  overlay.classList.add("active");
-});
-
-// CLOSE when clicking outside box
-overlay.addEventListener("click", (e) => {
-  if (e.target === overlay) {
-    overlay.classList.remove("active");
-  }
-});
+  let result = [...allBirds];
 
   // =========================
-  // FILTERING
+  // SEARCH
   // =========================
+  if (state.search !== "") {
+    const term = state.search;
 
-  // NUMBER filter (search)
-  if (numberFilter.checked && searchTerm !== "") {
-    filteredBirds = filteredBirds.filter(bird =>
-      bird.id.toString().startsWith(searchTerm)
-    );
+    if (state.sort === "number") {
+      result = result.filter(bird =>
+        bird.id.toString().startsWith(term)
+      );
+    } else {
+      result = result.filter(bird =>
+        bird.name.toLowerCase().includes(term)
+      );
+    }
   }
 
-  // NAME filter (search)
-  if (nameFilter.checked && searchTerm !== "") {
-    filteredBirds = filteredBirds.filter(bird =>
-      bird.name.toLowerCase().includes(searchTerm)
-    );
-  }
+  // =========================
+  // TYPE FILTER
+  // =========================
+  if (typeFilter.checked && state.type !== "") {
+    result = result.filter(bird => {
+      const types = Array.isArray(bird.type)
+        ? bird.type
+        : [bird.type];
 
-  // TYPE filter (checkbox now!)
-  if (typeFilter.checked && typeSelect.value !== "") {
-    const selectedType = typeSelect.value.toLowerCase();
-
-    filteredBirds = filteredBirds.filter(bird => {
-      const types = Array.isArray(bird.type) ? bird.type : [bird.type];
-      return types.some(t => t.toLowerCase() === selectedType);
+      return types.some(t =>
+        t.toLowerCase() === state.type
+      );
     });
   }
 
   // =========================
   // SORTING
   // =========================
-
-  // Default → NUMBER
-  if (numberFilter.checked) {
-    filteredBirds.sort((a, b) => a.id - b.id);
-  }
-
-  // If NAME selected → alphabetical
-  if (nameFilter.checked) {
-    filteredBirds.sort((a, b) =>
+  if (state.sort === "name") {
+    result.sort((a, b) =>
       a.name.localeCompare(b.name)
     );
-  }
-
-  // fallback (if nothing selected)
-  if (!numberFilter.checked && !nameFilter.checked) {
-    filteredBirds.sort((a, b) => a.id - b.id);
+  } else {
+    result.sort((a, b) => a.id - b.id);
   }
 
   // =========================
   // DISPLAY
   // =========================
-
-  displayBirds(filteredBirds);
+  displayBirds(result);
 
   notFoundMessage.style.display =
-    filteredBirds.length === 0 ? "block" : "none";
+    result.length === 0 ? "block" : "none";
 }
 
+// ===============================
+// EVENT LISTENERS
+// ===============================
 
-// ===============================
-// CLEAR SEARCH
-// ===============================
-function clearSearch() {
+// SEARCH INPUT
+searchInput.addEventListener("input", (e) => {
+  state.search = e.target.value.toLowerCase().trim();
+  updateDisplay();
+});
+
+// CLEAR BUTTON
+closeButton.addEventListener("click", () => {
+  state.search = "";
   searchInput.value = "";
-  displayBirds(allBirds);
-  notFoundMessage.style.display = "none";
-}
+  updateDisplay();
+});
 
+// SORT RADIO
+numberFilter.addEventListener("change", () => {
+  if (numberFilter.checked) {
+    state.sort = "number";
+    updateDisplay();
+  }
+});
 
-// ===============================
-// EVENTS
-// ===============================
-searchInput.addEventListener("keyup", handleSearch);
-closeButton.addEventListener("click", clearSearch);
+nameFilter.addEventListener("change", () => {
+  if (nameFilter.checked) {
+    state.sort = "name";
+    updateDisplay();
+  }
+});
 
-// Make filters react immediately
-numberFilter.addEventListener("change", handleSearch);
-nameFilter.addEventListener("change", handleSearch);
-typeFilter.addEventListener("change", handleSearch);
-typeSelect.addEventListener("change", handleSearch);
+// TYPE CHECKBOX
+typeFilter.addEventListener("change", () => {
+  if (!typeFilter.checked) {
+    state.type = "";
+    typeSelect.value = "";
+  }
+  updateDisplay();
+});
 
+// TYPE DROPDOWN
+typeSelect.addEventListener("change", (e) => {
+  state.type = e.target.value.toLowerCase();
+  updateDisplay();
+});
 
 // ===============================
 // REDIRECT HELPER
@@ -296,7 +299,7 @@ async function fetchBirdDataBeforeRedirect(id) {
   }
 }
 
-const homeLogo = document.querySelector("intro-logo");
+const homeLogo = document.querySelector("#intro-logo");
 
 homeLogo.addEventListener("click", () => {
   searchInput.value = "";
