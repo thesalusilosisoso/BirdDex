@@ -143,7 +143,7 @@ function displayBirdDetails(bird) {
 
   /* IMAGE */
   const imageElement = document.querySelector(".detail-img-wrapper img");
-  imageElement.src = `./icons/${id}.png`;
+  imageElement.src = `./icons2/${id}.png`;
   imageElement.alt = formattedName;
 
   /* WEIGHT + WINGSPAN */
