@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bird Detail</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+.detail-img-wrapper img {
+  width: 210px;
+  height: 210px;
+  object-fit: contain;
+}
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<script src="./bird-detail.js" defer></script>
+</head>
+
+<body>
+
+<main class="detail-main main">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-wrapper">
+
+      <div class="header-wrap">
+        <!-- ✅ ADDED id="homeBtn" -->
+        <a href="./index.html" class="back-btn-wrap" id="homeBtn">
+          <img src="./assets/back-to-home.svg" alt="back to home" class="back-btn"/>
+        </a>
+
+        <div class="name-wrap">
+          <h1 class="name"></h1>
+        </div>
+      </div>
+
+      <div class="birds-id-wrap">
+        <p class="body2-fonts"></p>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- IMAGE + ARROWS -->
+  <div class="featured-img">
+    <a href="#" class="arrow left-arrow" id="leftArrow">
+      <img src="./assets/chevron_left.svg" alt="back">
+    </a>
+
+    <div class="detail-img-wrapper">
+      <img src="" alt="">
+
+      <button class="sound-btn">
+        <img src="./assets/sound.png" alt="play sound">
+      </button>
+    </div>
+
+    <a href="#" class="arrow right-arrow" id="rightArrow">
+      <img src="./assets/chevron_right.svg" alt="forward">
+    </a>
+  </div>
+
+  <!-- DETAIL CARD -->
+  <div class="detail-card-detail-wrapper">
+
+    <!-- TYPES -->
+    <div class="power-wrapper"></div>
+
+    <!-- ABOUT TITLE -->
+    <p class="body2-fonts about-text">About</p>
+
+    <!-- WEIGHT / WINGSPAN / ABILITY -->
+    <div class="birds-detail-wrapper">
+
+      <div class="birds-detail-wrap">
+        <div class="birds-detail">
+          <img src="./assets/weight.svg" alt="weight">
+          <p class="body3-fonts weight"></p>
+        </div>
+        <p class="caption-fonts">Weight</p>
+      </div>
+
+      <div class="birds-detail-wrap">
+        <div class="birds-detail">
+          <img src="./assets/height.svg" alt="wingspan" class="straighten"/>
+          <p class="body3-fonts height"></p>
+        </div>
+        <p class="caption-fonts">Wingspan</p>
+      </div>
+
+      <div class="birds-detail-wrap">
+        <div class="birds-detail ability"></div>
+        <p class="caption-fonts">Ability</p>
+      </div>
+
+    </div> 
+
+    <!-- DESCRIPTION -->
+    <p class="body3-fonts birds-description"></p>
+
+    <!-- BASE STATS TITLE -->
+    <p class="body2-fonts about-text">Base Stats</p>
+
+    <!-- STATS -->
+    <div class="stats-wrapper"></div>
+
+  </div>
+
+  <!-- BACKGROUND LOGO -->
+  <img src="./assets/birdlogofinal.svg" alt="birdlogo" class="detail-bg"/>
+
+</main>
+
+</body>
+</html>

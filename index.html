@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BirdDex</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="./birds.js" defer></script>
+<script src="./search.js" defer></script>
+</head>
+
+<body>
+
+<!-- INTRO SCREEN -->
+<div id="intro-screen">
+<div class="intro-content">
+
+<h1 class="intro-title">
+ BirdDex
+<img src="./assets/birdlogo11.svg" alt="logo" class="intro-logo">
+</h1>
+
+<button id="start-btn">Let's Go!</button>
+<button id="help-btn">How To Use</button>
+<button id="info-btn">What's BirdDex?</button>
+
+<div id="help-text" class="hidden">
+<p>• Click a bird to view details</p>
+</div>
+
+<div id="info-text" class="hidden">
+<p>BirdDex is your structured bird database.</p>
+</div>
+
+</div>
+</div>
+
+<main class="main">
+
+<header class="header-home">
+<div class="container">
+
+<!-- LOGO -->
+<a href="index.html" class="logo-wrapper">
+<img src="./assets/birdlogo11.svg" alt="bird_logo" height="6%" width="6%">
+<h1>BirdDex!</h1>
+</a>
+
+<!-- SURPRISE BUTTON -->
+<button id="surpriseBtn">🔄 Surprise Me!</button>
+
+<!-- SEARCH -->
+<div class="search-wrap">
+<img src="./assets/search.svg" alt="search icon" class="search-icon" height="30px">
+
+<input
+type="text"
+class="search-input body3-fonts"
+placeholder="Search"
+id="search-input"
+>
+
+<img
+src="./assets/cross.svg"
+alt="clear"
+class="search-close-icon"
+id="search-close-icon"
+height="30px"
+>
+</div>
+
+<!-- SORT -->
+<div class="sort-wrapper">
+
+<div class="sort-wrap">
+<img src="./assets/sorting.svg" alt="sort" id="sort-icon" height="30px">
+</div>
+
+<div class="filter-wrapper">
+
+<div>
+<input type="radio" id="number" name="filters" value="number" checked>
+<label for="number">Number</label>
+</div>
+
+<div>
+<input type="radio" id="name" name="filters" value="name">
+<label for="name">Name</label>
+</div>
+
+<div>
+<input type="checkbox" id="type" name="filters" value="type">
+<label for="type">Type</label>
+</div>
+
+<div id="type-dropdown" class="type-dropdown">
+<select id="type-select">
+<option value="">All</option>
+<option value="parrot">Parrot</option>
+<option value="raptor">Raptor</option>
+<option value="waterfowl">Waterfowl</option>
+<option value="wader">Wader</option>
+<option value="songbird">Songbird</option>
+<option value="seabird">Seabird</option>
+<option value="forest">Forest</option>
+<option value="tropical">Tropical</option>
+<option value="corvid">Corvid</option>
+<option value="urban">Urban</option>
+<option value="ground">Ground</option>
+<option value="flightless">Flightless</option>
+<option value="domestic">Domestic</option>
+<option value="extinct">Extinct</option>
+<option value="generalist">Generalist</option>
+<option value="nectarbird">Nectarbird</option>
+<option value="columbid">Columbid</option>
+<option value="bird-of-paradise">Bird of Paradise</option>
+</select>
+</div>
+
+</div>
+</div>
+
+</div>
+</header>
+
+
+<!-- BIRD LIST -->
+<section class="bird-list">
+<div class="container">
+<div class="list-wrapper"></div>
+</div>
+
+<div id="not-found-message">Bird not found D:</div>
+</section>
+
+</main>
+
+<button id="help-toggle" class="help2-btn">?</button>
+
+</body>
+</html>
