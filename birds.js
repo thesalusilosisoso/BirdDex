@@ -1,5 +1,5 @@
 
-localStorage.removeItem("seenIntro");
+/*localStorage.removeItem("seenIntro");*/
 
 
 const MAX_BIRD = 125;
@@ -181,21 +181,16 @@ function updateDisplay() {
   let result = [...allBirds];
 
   // =========================
-  // SEARCH
-  // =========================
-  if (state.search !== "") {
-    const term = state.search;
+// SEARCH (independent from sort)
+// =========================
+if (state.search !== "") {
+  const term = state.search;
 
-    if (state.sort === "number") {
-      result = result.filter(bird =>
-        bird.id.toString().startsWith(term)
-      );
-    } else {
-      result = result.filter(bird =>
-        bird.name.toLowerCase().includes(term)
-      );
-    }
-  }
+  result = result.filter(bird =>
+    bird.id.toString().startsWith(term) ||
+    bird.name.toLowerCase().includes(term)
+  );
+}
 
   // =========================
   // TYPE FILTER
