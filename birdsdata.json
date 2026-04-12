@@ -1,41 +1,58 @@
-[
-  {
-    "id" : 1,
-    "name": "House Sparrow",
-    "scientific_name": "Passer domesticus",
-    "weight": "24–39 g",
-    "wingspan": "19–25 cm",
-    "type": ["Songbird", "Urban"],
-    "ability": "Urban Adaptability",
-    "stats": { "speed": 70, "agility": 75, "song": 60, "endurance": 55, "adaptability": 95 },
-    "cry": "./audio/house-sparrow.ogg",
-    "desc": "This species is known for thriving alongside humans in even the busiest cities and towns. Bold, resourceful, and highly social, it nests in buildings, scavenges efficiently, and fills neighborhoods with constant cheerful chirps throughout the year."
-  },
-  {
-    "id" : 2,
-    "name": "Lovebird",
-    "scientific_name": "Agapornis",
-    "weight": "40–60 g",
-    "wingspan": "13–17 cm",
-    "type": "Parrot",
-    "ability": "Bonded Pair",
-    "stats": { "speed": 65, "agility": 80, "song": 70, "endurance": 60, "adaptability": 75 },
-    "cry": "./audio/lovebird.ogg",
-    "desc": "This species is known for forming strong lifelong pair bonds and displaying affectionate social behavior. Energetic and vocal, it communicates with high-pitched calls, mutual preening, and constant interaction with its chosen partner."
-  },
-  {
-    "id" : 3,
-    "name": "Cockatiel",
-    "scientific_name": "Nymphicus hollandicus",
-    "weight": "80–120 g",
-    "wingspan": "30–33 cm",
-    "type": "Parrot",
-    "ability": "Whistle Mimicry",
-    "stats": { "speed": 60, "agility": 70, "song": 85, "endurance": 65, "adaptability": 80 },
-    "cry": "./audio/cockatiel.ogg",
-    "desc": "This species is known for its expressive crest and remarkable whistling ability. Gentle yet alert, it quickly learns melodies and household sounds, using soft chirps and animated head movements to communicate curiosity and emotion."
-  },
-  {
+[{
+  "id": 1,
+  "name": "House Sparrow",
+  "scientific_name": "Passer domesticus",
+  "weight": "24–39 g",
+  "wingspan": "19–25 cm",
+  "type": ["Songbird", "Urban"],
+  "ability": "Urban Adaptability",
+  "habitat": "Urban areas, towns, gardens, and human settlements",
+  "origin": "Europe, Asia, and introduced worldwide",
+  "diet": "Seeds, grains, insects, food scraps",
+  "rarity": "Very Common",
+  "stats-desc": "Its extremely high adaptability comes from thriving alongside humans, using buildings for nesting and varied food sources. Moderate speed and agility support maneuvering through tight spaces, while lower endurance reflects short bursts of movement instead of long-distance travel.",
+  "ability-desc": "This ability reflects the sparrow’s success in human environments. It can nest in buildings, exploit food scraps, and tolerate noise and pollution. Its flexibility and bold behavior allow it to outcompete many species, making it one of the most widespread birds globally.",
+  "stats": { "speed": 70, "agility": 75, "song": 60, "endurance": 55, "adaptability": 95 },
+  "cry": "./audio/house-sparrow.ogg",
+  "desc": "This species is known for thriving alongside humans in even the busiest cities and towns. Bold, resourceful, and highly social, it nests in buildings, scavenges efficiently, and fills neighborhoods with constant cheerful chirps throughout the year."
+},
+{
+  "id": 2,
+  "name": "Lovebird",
+  "scientific_name": "Agapornis",
+  "weight": "40–60 g",
+  "wingspan": "13–17 cm",
+  "type": "Parrot",
+  "ability": "Bonded Pair",
+  "habitat": "Woodlands, savannas, and open forests",
+  "origin": "Sub-Saharan Africa and Madagascar",
+  "diet": "Seeds, fruits, vegetables",
+  "rarity": "Common",
+  "stats-desc": "Lovebirds have high agility and song due to their social nature. Their moderate speed and endurance reflect short, active flights rather than migration. Adaptability is balanced, as they thrive in both wild habitats and captivity with proper care.",
+  "ability-desc": "This ability highlights their lifelong pair bonding. Lovebirds depend heavily on companionship, expressing affection through grooming and constant interaction. Their emotional connection strengthens cooperation and communication, making their bond central to survival and well-being.",
+  "stats": { "speed": 65, "agility": 80, "song": 70, "endurance": 60, "adaptability": 75 },
+  "cry": "./audio/lovebird.ogg",
+  "desc": "This species is known for forming strong lifelong pair bonds and displaying affectionate social behavior. Energetic and vocal, it communicates with high-pitched calls, mutual preening, and constant interaction with its chosen partner."
+},
+{
+  "id": 3,
+  "name": "Cockatiel",
+  "scientific_name": "Nymphicus hollandicus",
+  "weight": "80–120 g",
+  "wingspan": "30–33 cm",
+  "type": "Parrot",
+  "ability": "Whistle Mimicry",
+  "habitat": "Dry grasslands, scrublands, and open woodlands",
+  "origin": "Australia",
+  "diet": "Seeds, grains, fruits, vegetables",
+  "rarity": "Very Common",
+  "stats-desc": "High song reflects advanced vocal mimicry. Moderate agility and speed support quick flight, while endurance suits nomadic travel. Strong adaptability allows survival in harsh climates and success as a domesticated companion species.",
+  "ability-desc": "This ability represents its talent for mimicking whistles and sounds. Cockatiels learn tunes through repetition, using vocalization to bond socially. In the wild, this aids communication, while in captivity it strengthens interaction with humans.",
+  "stats": { "speed": 60, "agility": 70, "song": 85, "endurance": 65, "adaptability": 80 },
+  "cry": "./audio/cockatiel.ogg",
+  "desc": "This species is known for its expressive crest and remarkable whistling ability. Gentle yet alert, it quickly learns melodies and household sounds, using soft chirps and animated head movements to communicate curiosity and emotion."
+},
+{
   "id": 4,
   "name": "Passenger Pigeon",
   "scientific_name": "Ectopistes migratorius",
@@ -43,11 +60,17 @@
   "wingspan": "50–65 cm",
   "type": ["Extinct", "Columbid"],
   "ability": "Vanished Flock",
+  "habitat": "Deciduous forests",
+  "origin": "North America",
+  "diet": "Seeds, nuts, fruits",
+  "rarity": "Extinct",
+  "stats-desc": "High endurance and speed reflect long migrations in massive flocks. Low adaptability contributed to extinction, as it relied on large populations and specific habitats that were heavily disrupted.",
+  "ability-desc": "This ability symbolizes reliance on enormous flock sizes for survival. While effective for protection and migration, it became a weakness when human hunting reduced populations, leading to rapid collapse and extinction.",
   "stats": { "speed": 75, "agility": 70, "song": 45, "endurance": 80, "adaptability": 40 },
   "cry": "./audio/passenger-pigeon.ogg",
   "desc": "Once forming enormous migrating flocks that darkened North American skies, this species traveled in overwhelming numbers. Intensive hunting and habitat destruction drove it to extinction in the early twentieth century, becoming a lasting symbol of conservation failure."
 },
-  {
+{
   "id": 5,
   "name": "African Grey Parrot",
   "scientific_name": "Psittacus erithacus",
@@ -55,17 +78,17 @@
   "wingspan": "46–52 cm",
   "type": ["Parrot","Tropical"],
   "ability": "Genius Mimic",
-  "stats": {
-    "speed": 65,
-    "agility": 75,
-    "song": 95,
-    "endurance": 70,
-    "adaptability": 90
-  },
+  "habitat": "Rainforests and woodland edges",
+  "origin": "Central and West Africa",
+  "diet": "Fruits, nuts, seeds",
+  "rarity": "Uncommon",
+  "stats-desc": "Extremely high song and adaptability reflect intelligence and vocal learning. Balanced speed and agility support flight through dense forests, while endurance supports active daily movement.",
+  "ability-desc": "This ability reflects its exceptional intelligence and mimicry. African Greys can associate words with meaning, solve problems, and imitate complex sounds, making them one of the most cognitively advanced bird species.",
+  "stats": { "speed": 65, "agility": 75, "song": 95, "endurance": 70, "adaptability": 90 },
   "cry": "./audio/african-grey.ogg",
   "desc": "This highly intelligent parrot is renowned for exceptional vocal mimicry and advanced problem-solving skills. Its silvery-grey feathers and vivid red tail stand out, while its cognitive abilities allow it to associate words with meaning."
 },
-  {
+{
   "id": 6,
   "name": "Blue-and-yellow Macaw",
   "scientific_name": "Ara ararauna",
@@ -73,29 +96,35 @@
   "wingspan": "100–114 cm",
   "type": ["Parrot","Tropical"],
   "ability": "Golden Echo",
-  "stats": {
-    "speed": 75,
-    "agility": 70,
-    "song": 95,
-    "endurance": 85,
-    "adaptability": 90
-  },
+  "habitat": "Rainforests, river edges, and savannas",
+  "origin": "South America",
+  "diet": "Fruits, nuts, seeds",
+  "rarity": "Common",
+  "stats-desc": "High endurance and song reflect loud communication and long flights. Strong adaptability allows survival in varied tropical environments, while agility is slightly lower due to large body size.",
+  "ability-desc": "This ability reflects powerful vocal calls used across long distances in dense forests. Their loud communication strengthens pair bonds and flock coordination, making them highly social and effective at maintaining group cohesion.",
+  "stats": { "speed": 75, "agility": 70, "song": 95, "endurance": 85, "adaptability": 90 },
   "cry": "./audio/blue-yellow-macaw.ogg",
   "desc": "A large and vividly colored macaw with brilliant blue wings and a golden-yellow chest. Native to South American rainforests, it forms strong lifelong pair bonds, travels in noisy flocks, and communicates with powerful calls that echo across the canopy."
 },
-  {
-    "id" : 7,
-    "name": "Barn Owl",
-    "scientific_name": "Tyto alba",
-    "weight": "400–700 g",
-    "wingspan": "80–95 cm",
-    "type": "Raptor",
-    "ability": "Silent Glide",
-    "stats": { "speed": 75, "agility": 85, "song": 40, "endurance": 70, "adaptability": 80 },
-    "cry": "./audio/barn-owl.ogg",
-    "desc": "This nocturnal hunter is famous for its near-silent flight, enabled by specialized feather structures. With a heart-shaped face that enhances sound detection, it locates prey in total darkness and strikes with astonishing precision."
-  },
-  {
+{
+  "id": 7,
+  "name": "Barn Owl",
+  "scientific_name": "Tyto alba",
+  "weight": "400–700 g",
+  "wingspan": "80–95 cm",
+  "type": "Raptor",
+  "ability": "Silent Glide",
+  "habitat": "Grasslands, farmlands, and open countryside",
+  "origin": "Worldwide",
+  "diet": "Rodents, small mammals, birds",
+  "rarity": "Common",
+  "stats-desc": "High agility and speed reflect precise hunting. Low song reflects its non-musical calls, while endurance supports nightly hunting routines. Adaptability allows survival across diverse regions.",
+  "ability-desc": "This ability reflects near-silent flight enabled by specialized feathers. It allows the owl to approach prey undetected in darkness, making it one of the most efficient nocturnal hunters.",
+  "stats": { "speed": 75, "agility": 85, "song": 40, "endurance": 70, "adaptability": 80 },
+  "cry": "./audio/barn-owl.ogg",
+  "desc": "This nocturnal hunter is famous for its near-silent flight, enabled by specialized feather structures. With a heart-shaped face that enhances sound detection, it locates prey in total darkness and strikes with astonishing precision."
+},
+{
   "id": 8,
   "name": "Blue-footed Booby",
   "scientific_name": "Sula nebouxii",
@@ -103,47 +132,54 @@
   "wingspan": "150–155 cm",
   "type": "Seabird",
   "ability": "Sky Plunge",
-  "stats": {
-    "speed": 85,
-    "agility": 70,
-    "song": 40,
-    "endurance": 80,
-    "adaptability": 65
-  },
+  "habitat": "Coastal islands and open ocean",
+  "origin": "Eastern Pacific Ocean",
+  "diet": "Fish",
+  "rarity": "Uncommon",
+  "stats-desc": "Very high speed reflects diving ability. Endurance supports long flights over water, while agility is moderate. Lower adaptability reflects reliance on marine environments.",
+  "ability-desc": "This ability reflects its high-speed plunge diving. By folding wings mid-air, it pierces water to catch fish, making it an efficient marine predator adapted to ocean hunting.",
+  "stats": { "speed": 85, "agility": 70, "song": 40, "endurance": 80, "adaptability": 65 },
   "cry": "./audio/blue-footed-booby.ogg",
   "desc": "This charismatic seabird is famous for its bright blue feet and elaborate courtship dances. It performs dramatic high-speed plunge dives from great heights, folding its wings to pierce the ocean surface in pursuit of fish."
 },
-  {
-    "id": 9,
-    "name": "Indian Ringneck",
-    "scientific_name": "Psittacula krameri",
-    "weight": "110–140 g",
-    "wingspan": "40–42 cm",
-    "type": ["Parrot", "Tropical"],
-    "ability": "Mimic Voice",
-    "stats": {
-      "speed": 75,
-      "agility": 80,
-      "song": 90,
-      "endurance": 65,
-      "adaptability": 95
-    },
-    "cry": "./audio/indian-ringneck.ogg",
-    "desc": "This slender parakeet is recognized for bright green plumage and the distinctive neck ring of adult males. Highly intelligent and adaptable, it thrives in both forests and cities while demonstrating impressive vocal mimicry."
-  },
-  { 
-    "id" : 10,
-    "name": "Blue Jay", 
-    "scientific_name": "Cyanocitta cristata", 
-    "weight": "70–100 g", 
-    "wingspan": "34–43 cm", 
-    "type": ["Corvid", "Forest"], 
-    "ability": "Clever Mimic", 
-    "stats": { "speed": 70, "agility": 75, "song": 65, "endurance": 60, "adaptability": 85 }, 
-    "cry": "./audio/blue-jay.ogg", 
-    "desc": "This intelligent and bold corvid is known for complex social behavior and sharp memory. It mimics hawk calls to deter rivals, caches food for later use, and fiercely defends territory during breeding season." },
+{
+  "id": 9,
+  "name": "Indian Ringneck",
+  "scientific_name": "Psittacula krameri",
+  "weight": "110–140 g",
+  "wingspan": "40–42 cm",
+  "type": ["Parrot", "Tropical"],
+  "ability": "Mimic Voice",
+  "habitat": "Forests, farmlands, and urban areas",
+  "origin": "Africa and South Asia",
+  "diet": "Seeds, fruits, grains",
+  "rarity": "Very Common",
+  "stats-desc": "High adaptability reflects success in cities and forests. Strong song and agility support communication and flight, while endurance is moderate.",
+  "ability-desc": "This ability highlights vocal mimicry and communication. Indian Ringnecks can imitate sounds and human speech, aiding social interaction and adaptability in changing environments.",
+  "stats": { "speed": 75, "agility": 80, "song": 90, "endurance": 65, "adaptability": 95 },
+  "cry": "./audio/indian-ringneck.ogg",
+  "desc": "This slender parakeet is recognized for bright green plumage and the distinctive neck ring of adult males. Highly intelligent and adaptable, it thrives in both forests and cities while demonstrating impressive vocal mimicry."
+},
+{
+  "id": 10,
+  "name": "Blue Jay",
+  "scientific_name": "Cyanocitta cristata",
+  "weight": "70–100 g",
+  "wingspan": "34–43 cm",
+  "type": ["Corvid", "Forest"],
+  "ability": "Clever Mimic",
+  "habitat": "Forests and suburban areas",
+  "origin": "North America",
+  "diet": "Nuts, seeds, insects, small animals",
+  "rarity": "Common",
+  "stats-desc": "Balanced stats reflect intelligence and adaptability. Good agility supports tree movement, while song reflects communication and mimicry ability.",
+  "ability-desc": "This ability reflects its intelligence and mimicry of predator calls. By imitating hawks, it can scare competitors and protect territory effectively.",
+  "stats": { "speed": 70, "agility": 75, "song": 65, "endurance": 60, "adaptability": 85 },
+  "cry": "./audio/blue-jay.ogg",
+  "desc": "This intelligent and bold corvid is known for complex social behavior and sharp memory. It mimics hawk calls to deter rivals, caches food for later use, and fiercely defends territory during breeding season."
+},
 
-  {
+{
   "id": 11,
   "name": "Japanese Snow Fairy",
   "scientific_name": "Aegithalos caudatus japonicus",
@@ -151,17 +187,17 @@
   "wingspan": "16–18 cm",
   "type": "Songbird",
   "ability": "Winter Charm",
-  "stats": {
-    "speed": 65,
-    "agility": 85,
-    "song": 80,
-    "endurance": 45,
-    "adaptability": 85
-  },
+  "habitat": "Temperate forests and snowy woodlands",
+  "origin": "Japan",
+  "diet": "Insects, spiders, and small arthropods",
+  "rarity": "Uncommon",
+  "stats-desc": "High agility reflects constant movement through branches. Strong song supports communication in flocks, while low endurance reflects its small size. Adaptability is high due to cooperative survival in cold environments.",
+  "ability-desc": "This ability reflects its cooperative flock behavior in winter. These birds huddle together to conserve warmth and maintain group cohesion, allowing them to survive harsh cold conditions where individual survival would be difficult.",
+  "stats": { "speed": 65, "agility": 85, "song": 80, "endurance": 45, "adaptability": 85 },
   "cry": "./audio/japanese-snow-fairy.ogg",
   "desc": "This fluffy white songbird is beloved for its round body and long tail, creating a fairy-like silhouette against snowy forests. It travels in cooperative flocks, sharing warmth and maintaining constant soft contact calls."
 },
-  {
+{
   "id": 12,
   "name": "Cockatoo",
   "scientific_name": "Cacatua galerita",
@@ -169,17 +205,17 @@
   "wingspan": "100–130 cm",
   "type": ["Parrot", "Tropical"],
   "ability": "Crest Flare",
-  "stats": {
-    "speed": 70,
-    "agility": 75,
-    "song": 85,
-    "endurance": 65,
-    "adaptability": 90
-  },
+  "habitat": "Forests, woodlands, and urban areas",
+  "origin": "Australia and nearby islands",
+  "diet": "Seeds, nuts, fruits, roots, and insects",
+  "rarity": "Common",
+  "stats-desc": "High song and adaptability reflect intelligence and loud communication. Moderate agility supports flight despite large size, while endurance is balanced for active daily movement.",
+  "ability-desc": "This ability reflects its expressive crest display used for communication and emotion. The crest signals excitement, alarm, or curiosity, making it a visual extension of its highly social and intelligent personality.",
+  "stats": { "speed": 70, "agility": 75, "song": 85, "endurance": 65, "adaptability": 90 },
   "cry": "./audio/cockatoo.ogg",
   "desc": "This highly social parrot is recognized for its dramatic crest display and piercing vocalizations. Intelligent and adaptable, it uses tools, solves puzzles, and forms strong social bonds within flocks in forests and urban areas."
 },
-  {
+{
   "id": 13,
   "name": "Common Snipe",
   "scientific_name": "Gallinago gallinago",
@@ -187,77 +223,107 @@
   "wingspan": "39–45 cm",
   "type": "Wader",
   "ability": "Drumming Dive",
-  "stats": {
-    "speed": 75,
-    "agility": 85,
-    "song": 70,
-    "endurance": 60,
-    "adaptability": 70
-  },
+  "habitat": "Wetlands, marshes, and bogs",
+  "origin": "Europe and Asia",
+  "diet": "Insects, worms, larvae, and small invertebrates",
+  "rarity": "Common",
+  "stats-desc": "High agility reflects erratic flight patterns. Moderate speed and endurance support migration, while song reflects unique sound production rather than vocal strength.",
+  "ability-desc": "This ability represents its aerial drumming display. Air passing through its tail feathers creates a haunting sound during dives, used for communication and mating displays in open wetlands.",
+  "stats": { "speed": 75, "agility": 85, "song": 70, "endurance": 60, "adaptability": 70 },
   "cry": "./audio/common-snipe.ogg",
   "desc": "This secretive marsh bird is famous for its erratic zigzag flight when flushed. During aerial displays, air rushing through specialized tail feathers creates a haunting drumming sound across wetlands."
 },
-  { 
-  "id" : 14,
-  "name": "Hummingbird", 
-  "scientific_name": "Trochilidae", 
-  "weight": "2–20 g", 
-  "wingspan": "7–13 cm", 
-  "type": ["Nectarbird","Tropical"], 
-  "ability": "Hover Pulse", 
-  "stats": { "speed": 90, "agility": 100, "song": 40, "endurance": 50, "adaptability": 80 }, 
-  "cry": "./audio/hummingbird.ogg", 
-  "desc": "This tiny nectar specialist hovers effortlessly with incredibly rapid wingbeats, allowing precise feeding from flowers. Its iridescent feathers shimmer in sunlight, and its fast metabolism demands frequent feeding throughout the day." },
-
-  { 
-  "id" : 15,
-  "name": "Toucan", 
-  "scientific_name": "Ramphastos", 
-  "weight": "500–860 g", 
-  "wingspan": "55–63 cm", 
-  "type": ["Tropical","Forest"], 
-  "ability": "Color Burst", 
-  "stats": { "speed": 60, "agility": 65, "song": 50, "endurance": 65, "adaptability": 70 }, 
-  "cry": "./audio/toucan.ogg", 
-  "desc": "This rainforest bird is known for its oversized, vividly colored bill, which helps regulate body temperature and reach fruit. Agile among canopy branches, it plays an important ecological role as a seed disperser." },
-
-  { 
-  "id" : 16,
-  "name": "Peacock", 
-  "scientific_name": "Pavo cristatus", 
-  "weight": "4–6 kg", 
-  "wingspan": "140–160 cm", 
-  "type": ["Ground", "Forest"], 
-  "ability": "Feather Display", 
-  "stats": { "speed": 50, "agility": 60, "song": 45, "endurance": 75, "adaptability": 70 }, 
-  "cry": "./audio/peacock.ogg", 
-  "desc": "This striking ground bird is renowned for the male's extravagant tail display, fanning iridescent eye-spotted feathers during courtship. Despite its ornate plumage, it can fly short distances to escape predators." },
-
-  { 
-  "id" : 17,
-  "name": "Emperor Penguin", 
-  "scientific_name": "Aptenodytes forsteri", 
-  "weight": "22–45 kg", 
-  "wingspan": "76-89 cm", 
-  "type": ["Flightless","Seabird"], 
-  "ability": "Polar Endurance", 
-  "stats": { "speed": 40, "agility": 50, "song": 30, "endurance": 100, "adaptability": 85 }, 
-  "cry": "./audio/emperor-penguin.ogg", 
-  "desc": "This largest penguin species survives brutal Antarctic winters by huddling in tightly packed groups. Males incubate eggs on their feet for weeks without feeding, enduring extreme cold and relentless winds." },
-
-  { 
-  "id" : 18,
-  "name": "Flamingo", 
-  "scientific_name": "Phoenicopterus", 
-  "weight": "2–4 kg", 
-  "wingspan": "140–170 cm", 
-  "type": "Wader", 
-  "ability": "Blush Filter", 
-  "stats": { "speed": 55, "agility": 60, "song": 50, "endurance": 75, "adaptability": 70 }, 
-  "cry": "./audio/flamingo.ogg", 
-  "desc": "This elegant wading bird is known for its pink coloration derived from carotenoid-rich diets. Feeding in shallow waters, it filters small organisms with specialized bills while balancing gracefully on long legs." },
-
-  {
+{
+  "id": 14,
+  "name": "Hummingbird",
+  "scientific_name": "Trochilidae",
+  "weight": "2–20 g",
+  "wingspan": "7–13 cm",
+  "type": ["Nectarbird","Tropical"],
+  "ability": "Hover Pulse",
+  "habitat": "Tropical forests, gardens, and flower-rich areas",
+  "origin": "Americas",
+  "diet": "Nectar and small insects",
+  "rarity": "Common",
+  "stats-desc": "Extremely high speed and agility reflect rapid wingbeats and hovering ability. Low endurance reflects high energy consumption, while adaptability supports survival in varied floral environments.",
+  "ability-desc": "This ability reflects its unique hovering flight. By beating its wings rapidly, it can remain stationary mid-air, allowing precise feeding from flowers and making it one of the most specialized fliers among birds.",
+  "stats": { "speed": 90, "agility": 100, "song": 40, "endurance": 50, "adaptability": 80 },
+  "cry": "./audio/hummingbird.ogg",
+  "desc": "This tiny nectar specialist hovers effortlessly with incredibly rapid wingbeats, allowing precise feeding from flowers. Its iridescent feathers shimmer in sunlight, and its fast metabolism demands frequent feeding throughout the day."
+},
+{
+  "id": 15,
+  "name": "Toucan",
+  "scientific_name": "Ramphastos",
+  "weight": "500–860 g",
+  "wingspan": "55–63 cm",
+  "type": ["Tropical","Forest"],
+  "ability": "Color Burst",
+  "habitat": "Rainforests and tropical woodlands",
+  "origin": "Central and South America",
+  "diet": "Fruits, insects, eggs, and small animals",
+  "rarity": "Uncommon",
+  "stats-desc": "Moderate speed and agility reflect canopy movement. Adaptability is balanced, while endurance supports daily foraging. Song is lower due to simple vocalizations.",
+  "ability-desc": "This ability reflects its large, colorful bill used for feeding and thermoregulation. It helps reach fruit, regulate body heat, and signal visually within dense forest environments.",
+  "stats": { "speed": 60, "agility": 65, "song": 50, "endurance": 65, "adaptability": 70 },
+  "cry": "./audio/toucan.ogg",
+  "desc": "This rainforest bird is known for its oversized, vividly colored bill, which helps regulate body temperature and reach fruit. Agile among canopy branches, it plays an important ecological role as a seed disperser."
+},
+{
+  "id": 16,
+  "name": "Peacock",
+  "scientific_name": "Pavo cristatus",
+  "weight": "4–6 kg",
+  "wingspan": "140–160 cm",
+  "type": ["Ground", "Forest"],
+  "ability": "Feather Display",
+  "habitat": "Forests, grasslands, and farmlands",
+  "origin": "India and Sri Lanka",
+  "diet": "Seeds, insects, small reptiles, and plants",
+  "rarity": "Common",
+  "stats-desc": "Lower speed reflects ground movement. Endurance is higher due to large body, while agility is moderate. Song is low, but adaptability allows survival in varied habitats.",
+  "ability-desc": "This ability reflects its iconic tail display used for courtship. The large, colorful feathers attract mates and signal health, making visual presentation a key survival and reproduction strategy.",
+  "stats": { "speed": 50, "agility": 60, "song": 45, "endurance": 75, "adaptability": 70 },
+  "cry": "./audio/peacock.ogg",
+  "desc": "This striking ground bird is renowned for the male's extravagant tail display, fanning iridescent eye-spotted feathers during courtship. Despite its ornate plumage, it can fly short distances to escape predators."
+},
+{
+  "id": 17,
+  "name": "Emperor Penguin",
+  "scientific_name": "Aptenodytes forsteri",
+  "weight": "22–45 kg",
+  "wingspan": "76-89 cm",
+  "type": ["Flightless","Seabird"],
+  "ability": "Polar Endurance",
+  "habitat": "Antarctic ice and coastal waters",
+  "origin": "Antarctica",
+  "diet": "Fish, squid, and krill",
+  "rarity": "Uncommon",
+  "stats-desc": "Maximum endurance reflects survival in extreme cold. Low speed and agility reflect land movement, while adaptability is high for extreme climates.",
+  "ability-desc": "This ability reflects its survival in harsh Antarctic conditions. By huddling in groups and conserving energy, it withstands freezing temperatures and long fasting periods during breeding.",
+  "stats": { "speed": 40, "agility": 50, "song": 30, "endurance": 100, "adaptability": 85 },
+  "cry": "./audio/emperor-penguin.ogg",
+  "desc": "This largest penguin species survives brutal Antarctic winters by huddling in tightly packed groups. Males incubate eggs on their feet for weeks without feeding, enduring extreme cold and relentless winds."
+},
+{
+  "id": 18,
+  "name": "Flamingo",
+  "scientific_name": "Phoenicopterus",
+  "weight": "2–4 kg",
+  "wingspan": "140–170 cm",
+  "type": "Wader",
+  "ability": "Blush Filter",
+  "habitat": "Lagoons, lakes, and wetlands",
+  "origin": "Africa, Asia, and the Americas",
+  "diet": "Algae, plankton, and small crustaceans",
+  "rarity": "Common",
+  "stats-desc": "Balanced stats reflect wading lifestyle. Endurance supports long standing and feeding, while adaptability allows survival in saline environments.",
+  "ability-desc": "This ability reflects filter-feeding behavior and diet-based coloration. Consuming carotenoids gives its pink hue, while its specialized bill filters small organisms from water efficiently.",
+  "stats": { "speed": 55, "agility": 60, "song": 50, "endurance": 75, "adaptability": 70 },
+  "cry": "./audio/flamingo.ogg",
+  "desc": "This elegant wading bird is known for its pink coloration derived from carotenoid-rich diets. Feeding in shallow waters, it filters small organisms with specialized bills while balancing gracefully on long legs."
+},
+{
   "id": 19,
   "name": "Vulture",
   "scientific_name": "Gyps fulvus",
@@ -265,52 +331,71 @@
   "wingspan": "230–265 cm",
   "type": "Raptor",
   "ability": "Carrion Sense",
-  "stats": {
-    "speed": 55,
-    "agility": 50,
-    "song": 20,
-    "endurance": 95,
-    "adaptability": 85
-  },
+  "habitat": "Mountains, grasslands, and open areas",
+  "origin": "Europe, Asia, and Africa",
+  "diet": "Carrion (dead animals)",
+  "rarity": "Uncommon",
+  "stats-desc": "Very high endurance reflects long soaring flights. Low song reflects minimal vocalization, while adaptability allows survival across harsh environments.",
+  "ability-desc": "This ability reflects its scavenging specialization. With keen eyesight and strong digestion, it locates and consumes carrion, playing a vital role in ecosystem cleanup and disease prevention.",
+  "stats": { "speed": 55, "agility": 50, "song": 20, "endurance": 95, "adaptability": 85 },
   "cry": "./audio/vulture.ogg",
-  "desc": "This powerful scavenger soars effortlessly on rising thermal currents, conserving energy while scanning vast landscapes. Equipped with keen eyesight and strong digestive systems, it plays a crucial ecological role by recycling carrion." 
+  "desc": "This powerful scavenger soars effortlessly on rising thermal currents, conserving energy while scanning vast landscapes. Equipped with keen eyesight and strong digestive systems, it plays a crucial ecological role by recycling carrion."
 },
-  { 
-  "id" : 20,
-  "name": "Woodpecker", 
-  "scientific_name": "Picidae", 
-  "weight": "70–250 g", 
-  "wingspan": "30–45 cm", 
-  "type": ["Forest","Songbird"], 
-  "ability": "Drum Strike", 
-  "stats": { "speed": 60, "agility": 70, "song": 50, "endurance": 85, "adaptability": 80 }, 
-  "cry": "./audio/woodpecker.ogg", 
-  "desc": "'How much wood would a woodpecker peck if a woodpecker would peck wood?' This forest specialist drills into tree bark with rhythmic precision using a shock-absorbing skull structure. It excavates nesting cavities and searches for insects beneath bark, creating distinctive drumming sounds." },
+{
+  "id": 20,
+  "name": "Woodpecker",
+  "scientific_name": "Picidae",
+  "weight": "70–250 g",
+  "wingspan": "30–45 cm",
+  "type": ["Forest","Songbird"],
+  "ability": "Drum Strike",
+  "habitat": "Forests and woodlands",
+  "origin": "Worldwide",
+  "diet": "Insects, larvae, sap, and seeds",
+  "rarity": "Common",
+  "stats-desc": "High endurance reflects repetitive pecking. Agility supports tree climbing, while song reflects drumming rather than vocal calls.",
+  "ability-desc": "This ability reflects its powerful pecking adapted for drilling wood. Specialized skull structures absorb impact, allowing it to excavate nests and find insects beneath bark.",
+  "stats": { "speed": 60, "agility": 70, "song": 50, "endurance": 85, "adaptability": 80 },
+  "cry": "./audio/woodpecker.ogg",
+  "desc": "'How much wood would a woodpecker peck if a woodpecker would peck wood?' This forest specialist drills into tree bark with rhythmic precision using a shock-absorbing skull structure. It excavates nesting cavities and searches for insects beneath bark, creating distinctive drumming sounds."
+},
 
-  { 
-  "id" : 21,
-  "name": "Crow", 
-  "scientific_name": "Corvus", 
-  "weight": "300–600 g", 
-  "wingspan": "85–100 cm", 
-  "type": ["Corvid","Urban"], 
-  "ability": "Strategic Mind", 
-  "stats": { "speed": 75, "agility": 80, "song": 55, "endurance": 85, "adaptability": 95 }, 
-  "cry": "./audio/crow.ogg", 
-  "desc": "This highly intelligent corvid demonstrates advanced problem-solving skills, tool use, and complex social behavior. Adaptable to cities and wilderness alike, it remembers faces, plans ahead, and communicates through varied, expressive calls." },
-
-{ 
-  "id" : 22,
-  "name": "Swan", 
-  "scientific_name": "Cygnus", 
-  "weight": "7–15 kg", 
-  "wingspan": "200–240 cm", 
-  "type": "Waterfowl", 
-  "ability": "Grace Glide", 
-  "stats": { "speed": 60, "agility": 65, "song": 50, "endurance": 85, "adaptability": 70 }, 
-  "cry": "./audio/swan.ogg", 
-  "desc": "This majestic waterfowl is admired for its elegant presence on calm lakes and rivers. Powerful wings carry it across long migratory routes, while strong pair bonds and defensive behavior protect nesting territories." },
-
+ {
+  "id": 21,
+  "name": "Crow",
+  "scientific_name": "Corvus",
+  "weight": "300–600 g",
+  "wingspan": "85–100 cm",
+  "type": ["Corvid","Urban"],
+  "ability": "Strategic Mind",
+  "diet": "Omnivore",
+  "rarity": "Common",
+  "stats": { "speed": 75, "agility": 80, "song": 55, "endurance": 85, "adaptability": 95 },
+  "cry": "./audio/crow.ogg",
+  "desc": "This highly intelligent corvid demonstrates advanced problem-solving skills, tool use, and complex social behavior. Adaptable to cities and wilderness alike, it remembers faces, plans ahead, and communicates through varied, expressive calls.",
+  "habitat": "Urban areas, forests, and open landscapes",
+  "origin": "Worldwide",
+  "stats-desc": "High intelligence is reflected in strong adaptability and endurance. Balanced speed and agility support both flight and ground activity, while moderate song reflects complex but non-melodic vocalizations.",
+  "ability-desc": "This bird uses advanced problem-solving and memory to navigate environments. Its ability represents intelligence and planning, allowing it to adapt, use tools, and outmaneuver threats in both natural and urban settings."
+},
+{
+  "id": 22,
+  "name": "Swan",
+  "scientific_name": "Cygnus",
+  "weight": "7–15 kg",
+  "wingspan": "200–240 cm",
+  "type": "Waterfowl",
+  "ability": "Grace Glide",
+  "diet": "Herbivore",
+  "rarity": "Uncommon",
+  "stats": { "speed": 60, "agility": 65, "song": 50, "endurance": 85, "adaptability": 70 },
+  "cry": "./audio/swan.ogg",
+  "desc": "This majestic waterfowl is admired for its elegant presence on calm lakes and rivers. Powerful wings carry it across long migratory routes, while strong pair bonds and defensive behavior protect nesting territories.",
+  "habitat": "Lakes, rivers, and wetlands",
+  "origin": "Northern Hemisphere",
+  "stats-desc": "High endurance supports long migrations, while moderate speed and agility reflect strong but steady flight. Lower song aligns with simple vocal communication.",
+  "ability-desc": "Gliding smoothly across water and air, this bird maintains elegance and control. Its ability reflects efficiency and grace, allowing it to conserve energy during long-distance travel and maintain stability in open environments."
+},
 {
   "id": 23,
   "name": "Gray Heron",
@@ -319,11 +404,16 @@
   "wingspan": "155–195 cm",
   "type": "Wader",
   "ability": "Still Strike",
+  "diet": "Carnivore",
+  "rarity": "Uncommon",
   "stats": { "speed": 65, "agility": 60, "song": 30, "endurance": 85, "adaptability": 80 },
   "cry": "./audio/gray-heron.ogg",
-  "desc": "This tall, long-legged wading bird stands motionless in shallow water for extended periods before striking fish with lightning speed. Patient and adaptable, it inhabits wetlands, rivers, lakes, and coastal environments." 
+  "desc": "This tall, long-legged wading bird stands motionless in shallow water for extended periods before striking fish with lightning speed. Patient and adaptable, it inhabits wetlands, rivers, lakes, and coastal environments.",
+  "habitat": "Wetlands, rivers, lakes, and coastal areas",
+  "origin": "Europe, Asia, Africa",
+  "stats-desc": "High endurance supports long hunting periods, while moderate speed and low song reflect patience and stealth. Adaptability allows survival across varied aquatic habitats.",
+  "ability-desc": "Remaining motionless before striking, this bird relies on timing and precision. Its ability emphasizes patience, allowing it to conserve energy and execute sudden, accurate attacks on prey."
 },
-
 {
   "id": 24,
   "name": "Kakapo",
@@ -332,11 +422,16 @@
   "wingspan": "82–85 cm",
   "type": ["Flightless", "Forest"],
   "ability": "Booming Call",
+  "diet": "Herbivore",
+  "rarity": "Legendary",
   "stats": { "speed": 20, "agility": 35, "song": 90, "endurance": 60, "adaptability": 40 },
   "cry": "./audio/kakapo.ogg",
-  "desc": "This critically endangered nocturnal parrot is the world’s only flightless parrot species. Males produce deep, resonant booming calls that travel kilometers through forests during breeding season, attracting females to display arenas." 
+  "desc": "This critically endangered nocturnal parrot is the world’s only flightless parrot species. Males produce deep, resonant booming calls that travel kilometers through forests during breeding season, attracting females to display arenas.",
+  "habitat": "Dense forests and islands",
+  "origin": "New Zealand",
+  "stats-desc": "Very low speed and agility reflect flightlessness, while high song highlights booming calls. Moderate endurance supports slow movement, but low adaptability reflects its vulnerability.",
+  "ability-desc": "This bird produces deep, resonant calls that travel long distances. Its ability represents sound-based attraction, using low-frequency vibrations to communicate across forests during breeding seasons."
 },
-
 {
   "id": 25,
   "name": "Kiwi",
@@ -345,11 +440,16 @@
   "wingspan": "3 cm",
   "type": ["Flightless", "Forest"],
   "ability": "Night Forager",
+  "diet": "Omnivore",
+  "rarity": "Rare",
   "stats": { "speed": 25, "agility": 40, "song": 50, "endurance": 80, "adaptability": 60 },
   "cry": "./audio/kiwi.ogg",
-  "desc": "This nocturnal, flightless bird from New Zealand relies on a highly developed sense of smell. Its long bill, with nostrils at the tip, probes soil for insects and worms under the cover of darkness." 
+  "desc": "This nocturnal, flightless bird from New Zealand relies on a highly developed sense of smell. Its long bill, with nostrils at the tip, probes soil for insects and worms under the cover of darkness.",
+  "habitat": "Forests, grasslands, and shrublands",
+  "origin": "New Zealand",
+  "stats-desc": "Low speed reflects ground movement, while endurance is moderate for long foraging. Adaptability is decent, supported by its strong sensory abilities rather than mobility.",
+  "ability-desc": "Using its long bill and keen sense of smell, this bird locates hidden prey underground. Its ability highlights sensory precision, allowing it to forage effectively in darkness where vision is limited."
 },
-
 {
   "id": 26,
   "name": "Seagull",
@@ -358,11 +458,16 @@
   "wingspan": "75–170 cm",
   "type": ["Seabird","Urban"],
   "ability": "Salt Glide",
+  "diet": "Omnivore",
+  "rarity": "Common",
   "stats": { "speed": 70, "agility": 65, "song": 40, "endurance": 75, "adaptability": 90 },
   "cry": "./audio/seagull.ogg",
-  "desc": "This highly adaptable coastal bird thrives along shorelines, harbors, and cities. Skilled at soaring on sea winds, it opportunistically feeds on fish, invertebrates, and human scraps while calling loudly across beaches." 
+  "desc": "This highly adaptable coastal bird thrives along shorelines, harbors, and cities. Skilled at soaring on sea winds, it opportunistically feeds on fish, invertebrates, and human scraps while calling loudly across beaches.",
+  "habitat": "Coastlines, beaches, and urban areas",
+  "origin": "Worldwide",
+  "stats-desc": "High adaptability and endurance reflect its opportunistic lifestyle. Moderate speed and agility support soaring flight, while low song reflects simple, loud calls rather than complex melodies.",
+  "ability-desc": "This bird glides effortlessly on sea winds, using minimal energy over long distances. Its ability represents efficiency and opportunism, allowing it to exploit both natural food sources and human environments with ease."
 },
-
 {
   "id": 27,
   "name": "Royal Spoonbill",
@@ -371,11 +476,16 @@
   "wingspan": "120–140 cm",
   "type": "Wader",
   "ability": "Tidal Sweep",
+  "diet": "Carnivore",
+  "rarity": "Uncommon",
   "stats": { "speed": 55, "agility": 60, "song": 35, "endurance": 80, "adaptability": 70 },
   "cry": "./audio/royal-spoonbill.ogg",
-  "desc": "Recognizable by its distinctive spoon-shaped bill, this wading bird sweeps side to side through shallow waters. Sensitive nerve endings detect small aquatic prey, allowing precise feeding in wetlands and estuaries." 
+  "desc": "Recognizable by its distinctive spoon-shaped bill, this wading bird sweeps side to side through shallow waters. Sensitive nerve endings detect small aquatic prey, allowing precise feeding in wetlands and estuaries.",
+  "habitat": "Wetlands, estuaries, and shallow waters",
+  "origin": "Australia and surrounding regions",
+  "stats-desc": "High endurance supports prolonged foraging, while moderate speed and agility reflect slow, methodical feeding. Low song aligns with minimal vocal communication.",
+  "ability-desc": "Sweeping its specialized bill side to side, this bird detects prey through touch. Its ability highlights sensory precision, allowing efficient feeding even in murky waters where visibility is limited."
 },
-
 {
   "id": 28,
   "name": "Peregrine Falcon",
@@ -384,15 +494,15 @@
   "wingspan": "95–115 cm",
   "type": "Raptor",
   "ability": "Supersonic Stoop",
-  "stats": { 
-    "speed": 100, 
-    "agility": 95, 
-    "song": 30, 
-    "endurance": 85, 
-    "adaptability": 90 
-  },
+  "diet": "Carnivore",
+  "rarity": "Rare",
+  "stats": { "speed": 100, "agility": 95, "song": 30, "endurance": 85, "adaptability": 90 },
   "cry": "./audio/peregrine-falcon.ogg",
-  "desc": "The fastest bird on Earth, capable of reaching diving speeds over 300 km/h during its hunting stoop. Built for aerodynamic precision, it strikes mid-air prey with devastating force and thrives in cliffs, coastlines, and even modern city skyscrapers."
+  "desc": "The fastest bird on Earth, capable of reaching diving speeds over 300 km/h during its hunting stoop. Built for aerodynamic precision, it strikes mid-air prey with devastating force and thrives in cliffs, coastlines, and even modern city skyscrapers.",
+  "habitat": "Cliffs, coastlines, and urban skyscrapers",
+  "origin": "Worldwide",
+  "stats-desc": "Extremely high speed and agility reflect its role as the fastest diving bird. Strong endurance supports long flights, while low song reflects limited vocal reliance.",
+  "ability-desc": "This bird executes high-speed aerial dives to strike prey mid-air. Its ability emphasizes velocity and precision, making it one of the most formidable hunters in the sky."
 },
 {
   "id": 29,
@@ -402,11 +512,16 @@
   "wingspan": "20–23 cm",
   "type": ["Songbird","Domestic"],
   "ability": "Golden Melody",
+  "diet": "Herbivore",
+  "rarity": "Uncommon",
   "stats": { "speed": 45, "agility": 70, "song": 95, "endurance": 50, "adaptability": 65 },
   "cry": "./audio/canary.ogg",
-  "desc": "This small, vibrant songbird is admired for bright yellow plumage and intricate, melodic singing. Domesticated varieties have been selectively bred for complex vocal performances and cheerful companionship." 
+  "desc": "This small, vibrant songbird is admired for bright yellow plumage and intricate, melodic singing. Domesticated varieties have been selectively bred for complex vocal performances and cheerful companionship.",
+  "habitat": "Forests, grasslands, and domestic settings",
+  "origin": "Canary Islands",
+  "stats-desc": "Very high song reflects vocal specialization, while lower speed and endurance match its small size. Moderate adaptability allows survival in both wild and domestic environments.",
+  "ability-desc": "Known for its rich and melodic singing, this bird uses sound to communicate and attract mates. Its ability represents musical complexity, producing layered tones that stand out in its environment."
 },
-
 {
   "id": 30,
   "name": "Hornbill",
@@ -415,9 +530,15 @@
   "wingspan": "90–150 cm",
   "type": ["Tropical","Forest"],
   "ability": "Echo Beak",
+  "diet": "Omnivore",
+  "rarity": "Uncommon",
   "stats": { "speed": 65, "agility": 70, "song": 55, "endurance": 75, "adaptability": 70 },
   "cry": "./audio/hornbill.ogg",
-  "desc": "Known for its massive curved bill and casque, this tropical forest bird produces loud wingbeats that echo through dense canopy. Many species seal nesting females inside tree cavities for protection." 
+  "desc": "Known for its massive curved bill and casque, this tropical forest bird produces loud wingbeats that echo through dense canopy. Many species seal nesting females inside tree cavities for protection.",
+  "habitat": "Tropical forests and woodlands",
+  "origin": "Africa and Asia",
+  "stats-desc": "Balanced speed and agility support canopy movement, while strong endurance aids long flights. Moderate song reflects communication through both calls and wing sounds.",
+  "ability-desc": "With its large bill and resonant wingbeats, this bird produces sounds that echo through forests. Its ability highlights both physical presence and acoustic impact, making it noticeable even in dense environments."
 },
 
 {
@@ -428,11 +549,16 @@
   "wingspan": "130–170 cm",
   "type": "Wader",
   "ability": "Silent Stalk",
+  "diet": "Carnivore",
+  "rarity": "Uncommon",
   "stats": { "speed": 60, "agility": 65, "song": 25, "endurance": 85, "adaptability": 80 },
   "cry": "./audio/great-egret.ogg",
-  "desc": "This elegant white wading bird moves slowly and deliberately through shallow waters. With sudden precision, it spears fish using its sharp bill, maintaining balance with long legs and careful steps." 
+  "desc": "This elegant white wading bird moves slowly and deliberately through shallow waters. With sudden precision, it spears fish using its sharp bill, maintaining balance with long legs and careful steps.",
+  "habitat": "Wetlands, marshes, lakes, coastal shallows",
+  "origin": "Worldwide (except Antarctica)",
+  "stats-desc": "Moderate speed and agility reflect careful stalking rather than pursuit. Very high endurance supports long periods of still hunting. Low song value matches its quiet, solitary nature, while adaptability is high due to wide habitat tolerance.",
+  "ability-desc": "Silent Stalk represents its slow, deliberate hunting technique. By minimizing movement and sound, it approaches prey undetected before striking with precision. This ability highlights patience, stealth, and efficiency in shallow water environments."
 },
-
 {
   "id": 32,
   "name": "White Swan-Goose",
@@ -441,11 +567,16 @@
   "wingspan": "150–180 cm",
   "type": "Waterfowl",
   "ability": "Frost Guard",
+  "diet": "Herbivore",
+  "rarity": "Uncommon",
   "stats": { "speed": 60, "agility": 55, "song": 45, "endurance": 90, "adaptability": 75 },
   "cry": "./audio/swan-goose.ogg",
-  "desc": "A large migratory goose distinguished by its long neck and strong seasonal endurance. Traveling across cold wetlands and grasslands, it forms tight flocks for protection during lengthy migrations." 
+  "desc": "A large migratory goose distinguished by its long neck and strong seasonal endurance. Traveling across cold wetlands and grasslands, it forms tight flocks for protection during lengthy migrations.",
+  "habitat": "Wetlands, lakes, grasslands",
+  "origin": "East Asia",
+  "stats-desc": "Moderate speed and agility reflect heavy-bodied flight. Extremely high endurance supports long migrations. Song is modest, while adaptability remains solid due to seasonal movement across varied climates.",
+  "ability-desc": "Frost Guard reflects its resilience in cold environments. Through dense plumage and flock behavior, it conserves heat and survives harsh winters. This ability emphasizes endurance, cooperation, and survival across long migratory journeys."
 },
-
 {
   "id": 33,
   "name": "Varied Tit",
@@ -454,11 +585,16 @@
   "wingspan": "22–25 cm",
   "type": ["Forest","Songbird"],
   "ability": "Nutcracker",
+  "diet": "Omnivore",
+  "rarity": "Uncommon",
   "stats": { "speed": 55, "agility": 85, "song": 60, "endurance": 55, "adaptability": 70 },
   "cry": "./audio/varied-tit.ogg",
-  "desc": "This colorful woodland bird displays bold curiosity and agility among branches. Frequently seen cracking seeds and nuts against hard surfaces, it stores food caches for later consumption." 
+  "desc": "This colorful woodland bird displays bold curiosity and agility among branches. Frequently seen cracking seeds and nuts against hard surfaces, it stores food caches for later consumption.",
+  "habitat": "Forests, woodland edges",
+  "origin": "East Asia (Japan, Korea, China)",
+  "stats-desc": "High agility supports branch navigation and feeding. Moderate speed and endurance reflect short bursts of activity. Song is average, while adaptability is decent within forest ecosystems.",
+  "ability-desc": "Nutcracker highlights its ability to break open hard seeds using tools or surfaces. This behavior increases feeding efficiency and allows storage of food, emphasizing intelligence, memory, and survival strategy in forest habitats."
 },
-
 {
   "id": 34,
   "name": "Ryukyu Robin",
@@ -467,11 +603,16 @@
   "wingspan": "22–25 cm",
   "type": ["Songbird","Forest"],
   "ability": "Scarlet Echo",
+  "diet": "Omnivore",
+  "rarity": "Rare",
   "stats": { "speed": 50, "agility": 75, "song": 90, "endurance": 55, "adaptability": 65 },
   "cry": "./audio/ryukyu-robin.ogg",
-  "desc": "This island-dwelling robin is admired for vivid orange plumage contrasting dark wings. Its clear, melodic songs echo through subtropical forests, especially during breeding season displays." 
+  "desc": "This island-dwelling robin is admired for vivid orange plumage contrasting dark wings. Its clear, melodic songs echo through subtropical forests, especially during breeding season displays.",
+  "habitat": "Subtropical forests",
+  "origin": "Ryukyu Islands (Japan)",
+  "stats-desc": "Very high song reflects strong vocal presence. Agility is solid for forest movement. Speed and endurance are moderate, while adaptability is limited due to restricted island habitat.",
+  "ability-desc": "Scarlet Echo emphasizes its powerful and resonant song. Used for territory and mating, its voice carries through dense forests, making communication highly effective despite thick vegetation and isolated island environments."
 },
-
 {
   "id": 35,
   "name": "Crested Ibis",
@@ -480,11 +621,16 @@
   "wingspan": "130–140 cm",
   "type": "Wader",
   "ability": "Sacred Revival",
+  "diet": "Omnivore",
+  "rarity": "Rare",
   "stats": { "speed": 60, "agility": 60, "song": 40, "endurance": 85, "adaptability": 65 },
   "cry": "./audio/crested-ibis.ogg",
-  "desc": "Once critically endangered, this graceful ibis represents successful conservation recovery. With soft pink-tinged plumage and curved bill, it forages methodically in rice fields and wetlands." 
+  "desc": "Once critically endangered, this graceful ibis represents successful conservation recovery. With soft pink-tinged plumage and curved bill, it forages methodically in rice fields and wetlands.",
+  "habitat": "Wetlands, rice paddies",
+  "origin": "East Asia (China, Japan)",
+  "stats-desc": "Balanced speed and agility reflect steady foraging. High endurance supports long feeding periods. Low song aligns with quiet behavior, while adaptability remains moderate due to specialized habitat needs.",
+  "ability-desc": "Sacred Revival symbolizes its recovery from near extinction. Conservation efforts restored populations, making it a symbol of ecological resilience. The ability reflects survival, human intervention, and environmental restoration success."
 },
-
 {
   "id": 36,
   "name": "Secretary Bird",
@@ -493,11 +639,16 @@
   "wingspan": "190–210 cm",
   "type": ["Raptor", "Ground"],
   "ability": "Serpent Stomp",
+  "diet": "Carnivore",
+  "rarity": "Rare",
   "stats": { "speed": 80, "agility": 65, "song": 25, "endurance": 85, "adaptability": 70 },
   "cry": "./audio/secretary-bird.ogg",
-  "desc": "This tall terrestrial raptor hunts primarily on foot across African savannas. Using long, powerful legs, it delivers rapid, precise stomps to subdue snakes and other small prey." 
+  "desc": "This tall terrestrial raptor hunts primarily on foot across African savannas. Using long, powerful legs, it delivers rapid, precise stomps to subdue snakes and other small prey.",
+  "habitat": "Savannas, grasslands",
+  "origin": "Sub-Saharan Africa",
+  "stats-desc": "High speed reflects running ability rather than flight. Strong endurance supports long hunts. Low song is typical of raptors, while adaptability is moderate within open landscapes.",
+  "ability-desc": "Serpent Stomp reflects its unique hunting method. Using powerful legs, it strikes snakes with rapid precision. This ability highlights strength, timing, and specialized terrestrial predation uncommon among birds of prey."
 },
-
 {
   "id": 37,
   "name": "White Java Finch",
@@ -506,11 +657,16 @@
   "wingspan": "21–24 cm",
   "type": ["Songbird","Domestic"],
   "ability": "Pearl Chorus",
+  "diet": "Herbivore",
+  "rarity": "Uncommon",
   "stats": { "speed": 45, "agility": 70, "song": 75, "endurance": 50, "adaptability": 75 },
   "cry": "./audio/white-java-finch.ogg",
-  "desc": "This striking finch features clean white plumage contrasted by a bright pink bill. Social and active, it produces soft melodic chirps and thrives in aviaries and cultivated landscapes." 
+  "desc": "This striking finch features clean white plumage contrasted by a bright pink bill. Social and active, it produces soft melodic chirps and thrives in aviaries and cultivated landscapes.",
+  "habitat": "Grasslands, urban areas, aviaries",
+  "origin": "Indonesia",
+  "stats-desc": "Moderate agility supports active movement. Song is strong but not extreme. Lower endurance reflects small size, while adaptability is good due to domestication and human environments.",
+  "ability-desc": "Pearl Chorus reflects its gentle, melodic vocalizations. Often heard in groups, these calls strengthen social bonds and communication. The ability highlights harmony, cooperation, and its role as a social companion species."
 },
-
 {
   "id": 38,
   "name": "Brown Bengalese Finch",
@@ -519,11 +675,16 @@
   "wingspan": "20–23 cm",
   "type": ["Songbird","Domestic"],
   "ability": "Harmony Call",
+  "diet": "Herbivore",
+  "rarity": "Common",
   "stats": { "speed": 40, "agility": 65, "song": 85, "endurance": 45, "adaptability": 80 },
   "cry": "./audio/bengalese-finch.ogg",
-  "desc": "A domesticated finch valued for complex and improvisational singing patterns. Selective breeding enhanced its vocal versatility, resulting in layered melodies often used in behavioral studies." 
+  "desc": "A domesticated finch valued for complex and improvisational singing patterns. Selective breeding enhanced its vocal versatility, resulting in layered melodies often used in behavioral studies.",
+  "habitat": "Domestic environments, grasslands",
+  "origin": "Asia (domesticated lineage)",
+  "stats-desc": "High song reflects complex vocal ability. Lower speed and endurance reflect small size. Adaptability is strong due to domestication and human care environments.",
+  "ability-desc": "Harmony Call reflects its improvisational singing. Unlike rigid songs, it produces varied sequences, making it ideal for study. This ability emphasizes creativity, learning, and vocal flexibility shaped by selective breeding."
 },
-
 {
   "id": 39,
   "name": "Fish Owl",
@@ -532,11 +693,16 @@
   "wingspan": "150–200 cm",
   "type": ["Raptor", "Wader"],
   "ability": "River Hunter",
+  "diet": "Carnivore",
+  "rarity": "Rare",
   "stats": { "speed": 60, "agility": 70, "song": 35, "endurance": 80, "adaptability": 65 },
   "cry": "./audio/fish-owl.ogg",
-  "desc": "This large owl hunts along rivers and lakes at night. With silent wings and strong talons, it captures fish and amphibians, relying on keen hearing and low-light vision." 
+  "desc": "This large owl hunts along rivers and lakes at night. With silent wings and strong talons, it captures fish and amphibians, relying on keen hearing and low-light vision.",
+  "habitat": "Rivers, lakes, forests",
+  "origin": "Asia",
+  "stats-desc": "Moderate speed and agility reflect controlled flight. High endurance supports long nocturnal hunts. Low song fits owl behavior, while adaptability is moderate within aquatic ecosystems.",
+  "ability-desc": "River Hunter reflects its specialization in catching aquatic prey. Using silent flight and sharp talons, it hunts fish at night. This ability highlights precision, patience, and adaptation to water-based hunting environments."
 },
-
 {
   "id": 40,
   "name": "Andean Cock-of-the-rock",
@@ -545,9 +711,15 @@
   "wingspan": "28–33 cm",
   "type": ["Tropical","Forest"],
   "ability": "Flame Display",
+  "diet": "Omnivore",
+  "rarity": "Rare",
   "stats": { "speed": 55, "agility": 75, "song": 80, "endurance": 60, "adaptability": 65 },
   "cry": "./audio/cock-of-the-rock.ogg",
-  "desc": "This brilliant orange forest bird is famous for dramatic courtship dances performed in communal leks. Males fan crests and call loudly to attract females in dense Andean cloud forests." 
+  "desc": "This brilliant orange forest bird is famous for dramatic courtship dances performed in communal leks. Males fan crests and call loudly to attract females in dense Andean cloud forests.",
+  "habitat": "Cloud forests",
+  "origin": "South America (Andes)",
+  "stats-desc": "High song supports display calls. Agility helps movement in dense forests. Speed and endurance are moderate, while adaptability is limited to specialized habitats.",
+  "ability-desc": "Flame Display represents its striking courtship performance. Males gather and perform synchronized dances with vivid plumage to attract mates. This ability emphasizes visual spectacle, competition, and reproductive success strategies."
 },
 {
   "id": 41,
@@ -557,9 +729,15 @@
   "wingspan": "35–40 cm",
   "type": ["Tropical","Forest"],
   "ability": "Emerald Glide",
+  "diet": "Fruits (especially wild avocados), insects, small vertebrates",
+  "rarity": "Rare",
   "stats": { "speed": 65, "agility": 80, "song": 70, "endurance": 60, "adaptability": 60 },
   "cry": "./audio/quetzal.ogg",
-  "desc": "A sacred cloud-forest bird revered in Mesoamerican cultures, the quetzal shimmers with iridescent green plumage and flowing tail plumes that trail elegantly behind it. It inhabits highland forests, feeding primarily on fruits and insects while moving gracefully through dense canopy layers."
+  "desc": "A sacred cloud-forest bird revered in Mesoamerican cultures, the quetzal shimmers with iridescent green plumage and flowing tail plumes that trail elegantly behind it. It inhabits highland forests, feeding primarily on fruits and insects while moving gracefully through dense canopy layers.",
+  "habitat": "Cloud forests, highland tropical forests",
+  "origin": "Central America",
+  "stats-desc": "High agility supports smooth canopy movement. Moderate speed and endurance reflect gliding flight. Song is clear but not dominant, while adaptability is limited due to specialized highland habitat requirements.",
+  "ability-desc": "Emerald Glide reflects its graceful, energy-efficient flight through dense forest canopies. Its long tail and controlled wingbeats allow smooth navigation between branches, emphasizing elegance, precision, and adaptation to layered forest environments."
 },
 {
   "id": 42,
@@ -569,9 +747,15 @@
   "wingspan": "43–50 cm",
   "type": "Wader",
   "ability": "Reed Camouflage",
+  "diet": "Fish, insects, amphibians, small aquatic animals",
+  "rarity": "Uncommon",
   "stats": { "speed": 45, "agility": 60, "song": 30, "endurance": 65, "adaptability": 75 },
   "cry": "./audio/yellow-bittern.ogg",
-  "desc": "A secretive marsh heron that relies on remarkable camouflage, the yellow bittern freezes with its bill pointed upward to mimic surrounding reeds. Its striped plumage blends seamlessly into wetlands, allowing it to ambush fish, insects, and amphibians unnoticed."
+  "desc": "A secretive marsh heron that relies on remarkable camouflage, the yellow bittern freezes with its bill pointed upward to mimic surrounding reeds. Its striped plumage blends seamlessly into wetlands, allowing it to ambush fish, insects, and amphibians unnoticed.",
+  "habitat": "Marshes, wetlands, reed beds",
+  "origin": "Asia",
+  "stats-desc": "Lower speed reflects ambush hunting. Moderate agility aids careful positioning. Endurance is decent for prolonged stillness, while low song matches its secretive nature. Adaptability is fairly strong across wetland types.",
+  "ability-desc": "Reed Camouflage highlights its ability to blend into vertical vegetation. By freezing in place, it mimics reeds to avoid detection. This ability emphasizes stealth, patience, and survival through visual deception in dense wetlands."
 },
 {
   "id": 43,
@@ -581,9 +765,15 @@
   "wingspan": "45–50 cm",
   "type": "Forest",
   "ability": "Amber Dive",
+  "diet": "Insects, small reptiles, amphibians, fish",
+  "rarity": "Uncommon",
   "stats": { "speed": 70, "agility": 75, "song": 65, "endurance": 60, "adaptability": 65 },
   "cry": "./audio/ruddy-kingfisher.ogg",
-  "desc": "Recognized by its deep chestnut plumage and vivid red bill, the ruddy kingfisher thrives in forested regions near water. During migration season, its loud, ringing calls echo through woodlands as it hunts insects, small reptiles, and aquatic prey."
+  "desc": "Recognized by its deep chestnut plumage and vivid red bill, the ruddy kingfisher thrives in forested regions near water. During migration season, its loud, ringing calls echo through woodlands as it hunts insects, small reptiles, and aquatic prey.",
+  "habitat": "Forests near rivers, streams",
+  "origin": "Asia",
+  "stats-desc": "High speed and agility support quick dives for prey. Moderate song and endurance reflect active but not prolonged activity. Adaptability is moderate due to reliance on forest-water environments.",
+  "ability-desc": "Amber Dive represents its rapid plunging attack into water or ground prey. With sharp timing and precision, it captures prey efficiently. This ability emphasizes speed, accuracy, and opportunistic feeding behavior."
 },
 {
   "id": 44,
@@ -593,9 +783,15 @@
   "wingspan": "30–35 cm",
   "type": "Parrot",
   "ability": "Chatterstorm",
+  "diet": "Seeds, grasses, occasional insects",
+  "rarity": "Common",
   "stats": { "speed": 65, "agility": 85, "song": 90, "endurance": 55, "adaptability": 95 },
   "cry": "./audio/budgie.ogg",
-  "desc": "Native to Australia’s arid interior, this highly social parrot forms large, noisy flocks that travel in search of food and water. Intelligent and adaptable, the budgerigar communicates through rapid chatter and displays remarkable problem-solving abilities."
+  "desc": "Native to Australia’s arid interior, this highly social parrot forms large, noisy flocks that travel in search of food and water. Intelligent and adaptable, the budgerigar communicates through rapid chatter and displays remarkable problem-solving abilities.",
+  "habitat": "Grasslands, arid regions",
+  "origin": "Australia",
+  "stats-desc": "High song reflects constant vocal communication. Strong agility aids flock movement. Moderate endurance suits nomadic travel, while adaptability is extremely high due to harsh environments.",
+  "ability-desc": "Chatterstorm reflects its rapid and continuous vocal communication. In flocks, constant chatter helps coordination and bonding. This ability highlights social intelligence, communication, and survival through group cohesion."
 },
 {
   "id": 45,
@@ -605,9 +801,15 @@
   "wingspan": "15–18 cm",
   "type": ["Songbird","Forest"],
   "ability": "Spring Chorus",
+  "diet": "Nectar, insects, fruits",
+  "rarity": "Common",
   "stats": { "speed": 50, "agility": 85, "song": 80, "endurance": 45, "adaptability": 85 },
   "cry": "./audio/white-eye.ogg",
-  "desc": "A tiny, energetic songbird easily identified by its bright white eye-ring, the warbling white-eye flits quickly between branches in search of nectar and insects. Its cheerful, bubbling songs are especially prominent during the spring breeding season."
+  "desc": "A tiny, energetic songbird easily identified by its bright white eye-ring, the warbling white-eye flits quickly between branches in search of nectar and insects. Its cheerful, bubbling songs are especially prominent during the spring breeding season.",
+  "habitat": "Forests, gardens",
+  "origin": "East Asia",
+  "stats-desc": "High agility suits constant movement. Strong song reflects vocal activity. Lower endurance matches small body size, while adaptability is high due to urban and forest tolerance.",
+  "ability-desc": "Spring Chorus reflects its bright seasonal singing behavior. During breeding periods, its calls intensify to attract mates and defend territory. This ability emphasizes timing, energy, and vocal presence in reproductive cycles."
 },
 {
   "id": 46,
@@ -617,9 +819,15 @@
   "wingspan": "120–130 cm",
   "type": "Seabird",
   "ability": "Ocean Glide",
+  "diet": "Fish, squid, marine invertebrates",
+  "rarity": "Common",
   "stats": { "speed": 85, "agility": 60, "song": 30, "endurance": 95, "adaptability": 80 },
   "cry": "./audio/streaked-shearwater.ogg",
-  "desc": "A master of dynamic soaring, the streaked shearwater glides low over ocean waves for hours with minimal wingbeats. Breeding on coastal islands, it undertakes vast migratory journeys across open seas in search of fish and squid."
+  "desc": "A master of dynamic soaring, the streaked shearwater glides low over ocean waves for hours with minimal wingbeats. Breeding on coastal islands, it undertakes vast migratory journeys across open seas in search of fish and squid.",
+  "habitat": "Oceans, coastal islands",
+  "origin": "Pacific region",
+  "stats-desc": "Very high endurance supports long-distance flight. High speed aids gliding efficiency. Low agility and song reflect seabird traits, while adaptability is strong across marine environments.",
+  "ability-desc": "Ocean Glide reflects its ability to soar using wind currents. By conserving energy over long distances, it travels vast oceans efficiently. This ability emphasizes endurance, efficiency, and adaptation to open-sea conditions."
 },
 {
   "id": 47,
@@ -629,9 +837,15 @@
   "wingspan": "55–65 cm",
   "type": "Forest",
   "ability": "Brood Trick",
+  "diet": "Insects (especially caterpillars), larvae",
+  "rarity": "Uncommon",
   "stats": { "speed": 70, "agility": 75, "song": 80, "endurance": 65, "adaptability": 85 },
   "cry": "./audio/cuckoo.ogg",
-  "desc": "Famous for its unmistakable two-note call, the common cuckoo is equally known for brood parasitism. It lays its eggs in other birds’ nests, leaving foster parents to raise its young while it continues its solitary migratory lifestyle."
+  "desc": "Famous for its unmistakable two-note call, the common cuckoo is equally known for brood parasitism. It lays its eggs in other birds’ nests, leaving foster parents to raise its young while it continues its solitary migratory lifestyle.",
+  "habitat": "Forests, grasslands",
+  "origin": "Europe, Asia",
+  "stats-desc": "High song reflects iconic calls. Good speed and agility support migration. Strong adaptability comes from flexible breeding strategy, while endurance supports long travel.",
+  "ability-desc": "Brood Trick represents its parasitic breeding behavior. By laying eggs in other birds’ nests, it avoids parental care. This ability highlights deception, efficiency, and evolutionary strategy for survival."
 },
 {
   "id": 48,
@@ -641,9 +855,15 @@
   "wingspan": "65–75 cm",
   "type": "Wader",
   "ability": "Arctic Migration",
+  "diet": "Insects, worms, small crustaceans",
+  "rarity": "Uncommon",
   "stats": { "speed": 80, "agility": 70, "song": 40, "endurance": 90, "adaptability": 85 },
   "cry": "./audio/golden-plover.ogg",
-  "desc": "In winter plumage, this migratory shorebird displays muted tones that blend into coastal mudflats and fields. Breeding in Arctic tundra, it travels immense distances seasonally, demonstrating exceptional endurance and navigational precision."
+  "desc": "In winter plumage, this migratory shorebird displays muted tones that blend into coastal mudflats and fields. Breeding in Arctic tundra, it travels immense distances seasonally, demonstrating exceptional endurance and navigational precision.",
+  "habitat": "Tundra, coastal plains, fields",
+  "origin": "Arctic regions",
+  "stats-desc": "High speed and endurance support migration. Moderate agility aids maneuvering. Lower song reflects wader behavior, while adaptability is high across seasonal environments.",
+  "ability-desc": "Arctic Migration reflects its long-distance seasonal travel. Navigating vast routes, it adapts to extreme climate changes. This ability emphasizes endurance, navigation, and resilience across continents."
 },
 {
   "id": 49,
@@ -653,9 +873,15 @@
   "wingspan": "65–75 cm",
   "type": ["Tropical","Forest"],
   "ability": "Leaf Ferment",
+  "diet": "Leaves, shoots, plant material",
+  "rarity": "Uncommon",
   "stats": { "speed": 30, "agility": 40, "song": 35, "endurance": 75, "adaptability": 70 },
   "cry": "./audio/hoatzin.ogg",
-  "desc": "Often called a living fossil, the hoatzin possesses a unique digestive system that ferments leaves like a cow. Found in South American wetlands, its spiky crest and prehistoric appearance make it one of the world’s most unusual birds."
+  "desc": "Often called a living fossil, the hoatzin possesses a unique digestive system that ferments leaves like a cow. Found in South American wetlands, its spiky crest and prehistoric appearance make it one of the world’s most unusual birds.",
+  "habitat": "Swamps, wetlands, river forests",
+  "origin": "South America",
+  "stats-desc": "Low speed and agility reflect heavy body and weak flight. High endurance supports digestion and survival. Song is minimal, while adaptability is moderate in specific habitats.",
+  "ability-desc": "Leaf Ferment reflects its unusual digestive system. By fermenting leaves, it extracts nutrients others cannot. This ability emphasizes specialization, adaptation, and evolutionary uniqueness among birds."
 },
 {
   "id": 50,
@@ -665,9 +891,15 @@
   "wingspan": "22–25 cm",
   "type": ["Bird-of-Paradise","Tropical"],
   "ability": "Banner Display",
+  "diet": "Fruits, insects",
+  "rarity": "Rare",
   "stats": { "speed": 55, "agility": 85, "song": 75, "endurance": 55, "adaptability": 60 },
   "cry": "./audio/king-of-saxony.ogg",
-  "desc": "This extraordinary bird-of-paradise is famous for its two long, banner-like head plumes tipped with vivid blue spots. During elaborate courtship displays, males wave these plumes dramatically to attract females in dense New Guinea forests."
+  "desc": "This extraordinary bird-of-paradise is famous for its two long, banner-like head plumes tipped with vivid blue spots. During elaborate courtship displays, males wave these plumes dramatically to attract females in dense New Guinea forests.",
+  "habitat": "Tropical rainforests",
+  "origin": "New Guinea",
+  "stats-desc": "High agility supports display movement. Strong song aids courtship. Moderate endurance and speed reflect display-focused behavior, while adaptability is limited to rainforest ecosystems.",
+  "ability-desc": "Banner Display highlights its unique courtship feature. Males wave long head plumes in complex patterns to attract mates. This ability emphasizes visual signaling, precision, and reproductive competition."
 },
 {
   "id": 51,
@@ -677,9 +909,15 @@
   "wingspan": "30–35 cm",
   "type": "Corvid",
   "ability": "Sky Chorus",
+  "diet": "Omnivore (insects, fruits, seeds)",
+  "rarity": "Uncommon",
   "stats": { "speed": 65, "agility": 80, "song": 70, "endurance": 60, "adaptability": 85 },
   "cry": "./audio/azure-magpie.ogg",
-  "desc": "A highly social corvid, the azure-winged magpie travels in cooperative family groups. Its soft gray body contrasts beautifully with bright blue wings and tail, while its intelligence allows it to adapt successfully to varied woodland habitats."
+  "desc": "A highly social corvid, the azure-winged magpie travels in cooperative family groups. Its soft gray body contrasts beautifully with bright blue wings and tail, while its intelligence allows it to adapt successfully to varied woodland habitats.",
+  "habitat": "Woodlands, open forests",
+  "origin": "East Asia, Iberian Peninsula",
+  "stats-desc": "High agility and adaptability reflect intelligence and social coordination. Moderate speed and endurance support group movement. Song is strong for communication within flocks.",
+  "ability-desc": "Sky Chorus reflects its cooperative vocal communication. Group members call to maintain cohesion and coordinate movement. This ability highlights intelligence, teamwork, and social structure in complex environments."
 },
 {
   "id": 52,
@@ -689,9 +927,15 @@
   "wingspan": "125–150 cm",
   "type": "Raptor",
   "ability": "Arctic Vision",
+  "diet": "Carnivore (small mammals, birds)",
+  "rarity": "Uncommon",
   "stats": { "speed": 70, "agility": 65, "song": 30, "endurance": 85, "adaptability": 75 },
   "cry": "./audio/snowy-owl.ogg",
-  "desc": "A powerful Arctic predator, the snowy owl’s white plumage provides camouflage across tundra landscapes. With exceptional vision and hearing, it hunts lemmings and other small mammals even during long polar days and nights."
+  "desc": "A powerful Arctic predator, the snowy owl’s white plumage provides camouflage across tundra landscapes. With exceptional vision and hearing, it hunts lemmings and other small mammals even during long polar days and nights.",
+  "habitat": "Tundra, Arctic plains",
+  "origin": "Arctic regions",
+  "stats-desc": "High endurance supports harsh climates. Moderate speed and agility suit hunting. Low song reflects raptor behavior, while adaptability is strong within cold environments.",
+  "ability-desc": "Arctic Vision highlights its exceptional eyesight and hearing. It detects prey in extreme light conditions, from bright snow glare to darkness. This ability emphasizes sensory precision and survival in extreme climates."
 },
 {
   "id": 53,
@@ -701,9 +945,15 @@
   "wingspan": "20–24 cm",
   "type": ["Songbird","Forest"],
   "ability": "Golden Trill",
+  "diet": "Insectivore",
+  "rarity": "Uncommon",
   "stats": { "speed": 55, "agility": 85, "song": 90, "endurance": 50, "adaptability": 75 },
   "cry": "./audio/narcissus-flycatcher.ogg",
-  "desc": "Brilliant yellow and black plumage makes this migratory songbird stand out in forest canopies. The narcissus flycatcher produces clear, melodic trills during breeding season while actively pursuing insects in agile aerial chases."
+  "desc": "Brilliant yellow and black plumage makes this migratory songbird stand out in forest canopies. The narcissus flycatcher produces clear, melodic trills during breeding season while actively pursuing insects in agile aerial chases.",
+  "habitat": "Forests, woodland edges",
+  "origin": "East Asia",
+  "stats-desc": "High song and agility reflect vocal strength and aerial hunting. Moderate speed and low endurance match small body size. Adaptability is decent across seasonal habitats.",
+  "ability-desc": "Golden Trill reflects its bright and melodic song used during mating season. These vocalizations attract partners and establish territory, emphasizing clarity, rhythm, and communication within dense forest environments."
 },
 {
   "id": 54,
@@ -713,9 +963,15 @@
   "wingspan": "50–60 cm",
   "type": "Ground",
   "ability": "Desert Dash",
+  "diet": "Carnivore (insects, reptiles, small animals)",
+  "rarity": "Uncommon",
   "stats": { "speed": 95, "agility": 80, "song": 30, "endurance": 85, "adaptability": 90 },
   "cry": "./audio/roadrunner.ogg",
-  "desc": "Built for speed rather than sustained flight, the greater roadrunner sprints across desert terrain in pursuit of insects, lizards, and small snakes. Its long legs and tail provide balance while navigating harsh, arid environments."
+  "desc": "Built for speed rather than sustained flight, the greater roadrunner sprints across desert terrain in pursuit of insects, lizards, and small snakes. Its long legs and tail provide balance while navigating harsh, arid environments.",
+  "habitat": "Deserts, arid scrublands",
+  "origin": "North America",
+  "stats-desc": "Extremely high speed reflects ground sprinting. Strong agility and endurance support long chases. Low song is typical, while adaptability is high in harsh environments.",
+  "ability-desc": "Desert Dash emphasizes its incredible running speed. Instead of flying, it outruns prey across desert terrain. This ability highlights endurance, speed, and adaptation to arid landscapes."
 },
 {
   "id": 55,
@@ -725,9 +981,15 @@
   "wingspan": "32–35 cm",
   "type": "Ground",
   "ability": "Burst Flight",
+  "diet": "Omnivore (seeds, insects)",
+  "rarity": "Common",
   "stats": { "speed": 60, "agility": 65, "song": 55, "endurance": 60, "adaptability": 85 },
   "cry": "./audio/quail.ogg",
-  "desc": "A compact ground-dwelling bird, the quail relies on camouflage and sudden explosive flight to escape predators. Often found in grasslands and agricultural fields, it feeds primarily on seeds and small invertebrates."
+  "desc": "A compact ground-dwelling bird, the quail relies on camouflage and sudden explosive flight to escape predators. Often found in grasslands and agricultural fields, it feeds primarily on seeds and small invertebrates.",
+  "habitat": "Grasslands, farmlands",
+  "origin": "Europe, Asia, Africa",
+  "stats-desc": "Moderate stats reflect balanced survival strategy. Adaptability is high due to wide range. Burst-based movement reduces need for sustained speed or endurance.",
+  "ability-desc": "Burst Flight reflects its sudden takeoff escape strategy. When threatened, it launches rapidly to evade predators. This ability emphasizes reaction speed, surprise, and survival tactics."
 },
 {
   "id": 56,
@@ -737,9 +999,15 @@
   "wingspan": "77–80 cm",
   "type": ["Ground", "Forest"],
   "ability": "Ghost Crest",
+  "diet": "Carnivore (insects, small animals)",
+  "rarity": "Rare",
   "stats": { "speed": 40, "agility": 60, "song": 50, "endurance": 75, "adaptability": 55 },
   "cry": "./audio/kagu.ogg",
-  "desc": "Endemic to New Caledonia, the kagu is a rare, flightless bird with pale gray plumage and a dramatic crest. When threatened, it spreads its barred wings in striking defensive displays within dense forest habitats."
+  "desc": "Endemic to New Caledonia, the kagu is a rare, flightless bird with pale gray plumage and a dramatic crest. When threatened, it spreads its barred wings in striking defensive displays within dense forest habitats.",
+  "habitat": "Forests",
+  "origin": "New Caledonia",
+  "stats-desc": "Low speed reflects flightlessness. Moderate agility and endurance support ground movement. Adaptability is limited due to isolated habitat.",
+  "ability-desc": "Ghost Crest reflects its defensive display. By spreading its wings and crest, it startles predators. This ability emphasizes intimidation, visual signaling, and survival through display."
 },
 {
   "id": 57,
@@ -749,9 +1017,15 @@
   "wingspan": "24–29 cm",
   "type": "Songbird",
   "ability": "Marsh Anthem",
+  "diet": "Insectivore",
+  "rarity": "Common",
   "stats": { "speed": 55, "agility": 70, "song": 95, "endurance": 60, "adaptability": 80 },
   "cry": "./audio/reed-warbler.ogg",
-  "desc": "Dominating wetland soundscapes, the great reed warbler delivers loud, rhythmic songs from reed beds. Territorial and persistent, it defends breeding areas vigorously while feeding on insects among dense marsh vegetation."
+  "desc": "Dominating wetland soundscapes, the great reed warbler delivers loud, rhythmic songs from reed beds. Territorial and persistent, it defends breeding areas vigorously while feeding on insects among dense marsh vegetation.",
+  "habitat": "Marshes, wetlands",
+  "origin": "Europe, Asia",
+  "stats-desc": "Very high song reflects dominance in soundscape. Moderate mobility stats support active territory defense. Adaptability is strong across wetland environments.",
+  "ability-desc": "Marsh Anthem reflects its loud territorial singing. Its voice dominates wetlands, warning rivals and attracting mates. This ability emphasizes presence, persistence, and acoustic control of territory."
 },
 {
   "id": 58,
@@ -761,9 +1035,15 @@
   "wingspan": "140–152 cm",
   "type": ["Raptor","Forest"],
   "ability": "Silent Shadow",
+  "diet": "Carnivore (rodents, small mammals)",
+  "rarity": "Uncommon",
   "stats": { "speed": 65, "agility": 70, "song": 25, "endurance": 90, "adaptability": 75 },
   "cry": "./audio/great-grey-owl.ogg",
-  "desc": "One of the largest owl species by length, the great grey owl inhabits boreal forests. Its exceptional hearing allows it to pinpoint prey beneath deep snow, striking silently with broad wings designed for near-soundless flight."
+  "desc": "One of the largest owl species by length, the great grey owl inhabits boreal forests. Its exceptional hearing allows it to pinpoint prey beneath deep snow, striking silently with broad wings designed for near-soundless flight.",
+  "habitat": "Boreal forests",
+  "origin": "Northern Hemisphere",
+  "stats-desc": "High endurance supports long hunts. Moderate speed and agility suit silent flight. Low song aligns with stealth behavior, while adaptability is strong in cold forests.",
+  "ability-desc": "Silent Shadow reflects its near-silent flight and stealth hunting. It detects prey beneath snow and strikes undetected. This ability emphasizes precision, silence, and sensory awareness."
 },
 {
   "id": 59,
@@ -773,9 +1053,15 @@
   "wingspan": "100–120 cm",
   "type": "Waterfowl",
   "ability": "Lava Walker",
+  "diet": "Herbivore (grasses, leaves)",
+  "rarity": "Rare",
   "stats": { "speed": 55, "agility": 50, "song": 40, "endurance": 85, "adaptability": 65 },
   "cry": "./audio/nene.ogg",
-  "desc": "Hawaii’s state bird, the nene evolved from Canada goose ancestors and adapted to volcanic terrain. Its partially webbed feet aid walking across lava fields, while conservation efforts have helped recover its once-declining population."
+  "desc": "Hawaii’s state bird, the nene evolved from Canada goose ancestors and adapted to volcanic terrain. Its partially webbed feet aid walking across lava fields, while conservation efforts have helped recover its once-declining population.",
+  "habitat": "Volcanic grasslands, coastal areas",
+  "origin": "Hawaii",
+  "stats-desc": "Moderate speed and agility reflect ground movement. High endurance supports survival in rugged terrain. Adaptability is moderate due to specialized habitat.",
+  "ability-desc": "Lava Walker reflects its adaptation to volcanic landscapes. Its feet allow stable movement across rough terrain. This ability emphasizes environmental adaptation and resilience."
 },
 {
   "id": 60,
@@ -785,9 +1071,15 @@
   "wingspan": "25–30 cm",
   "type": "Songbird",
   "ability": "Tail Flick",
+  "diet": "Insectivore",
+  "rarity": "Common",
   "stats": { "speed": 65, "agility": 85, "song": 75, "endurance": 60, "adaptability": 90 },
   "cry": "./audio/white-wagtail.ogg",
-  "desc": "A lively and adaptable species, the white wagtail is recognized by its constant tail wagging while foraging along rivers, fields, and urban areas. It feeds on insects and often nests close to human settlements."
+  "desc": "A lively and adaptable species, the white wagtail is recognized by its constant tail wagging while foraging along rivers, fields, and urban areas. It feeds on insects and often nests close to human settlements.",
+  "habitat": "Riversides, fields, urban areas",
+  "origin": "Europe, Asia, Africa",
+  "stats-desc": "High agility supports constant movement. Strong adaptability reflects urban tolerance. Balanced speed and endurance suit active foraging behavior.",
+  "ability-desc": "Tail Flick reflects its constant tail movement. This behavior may flush insects or signal alertness. The ability emphasizes activity, awareness, and subtle environmental interaction."
 },
 {
   "id": 61,
@@ -797,9 +1089,15 @@
   "wingspan": "20–22 cm",
   "type": ["Songbird", "Forest"],
   "ability": "Winter Carol",
+  "diet": "Omnivore (insects, berries)",
+  "rarity": "Common",
   "stats": { "speed": 60, "agility": 75, "song": 90, "endurance": 65, "adaptability": 85 },
   "cry": "./audio/european-robin.ogg",
-  "desc": "A familiar garden bird across Europe, the European robin is recognized by its vivid orange-red breast and expressive posture. Unlike many songbirds, it sings throughout winter, delivering clear, melancholic notes while defending its territory even in colder months."
+  "desc": "A familiar garden bird across Europe, the European robin is recognized by its vivid orange-red breast and expressive posture. Unlike many songbirds, it sings throughout winter, delivering clear, melancholic notes while defending its territory even in colder months.",
+  "habitat": "Woodlands, gardens, parks",
+  "origin": "Europe",
+  "stats-desc": "High song reflects strong vocal presence even in winter. Balanced speed and agility support active foraging. Endurance and adaptability are solid due to year-round territorial behavior.",
+  "ability-desc": "Winter Carol reflects its unique habit of singing during colder months. This ability emphasizes resilience and communication, allowing it to defend territory and remain active when other birds are quiet."
 },
 {
   "id": 62,
@@ -809,9 +1107,15 @@
   "wingspan": "22–25 cm",
   "type": "Songbird",
   "ability": "Swarm Cloud",
+  "diet": "Herbivore (seeds, grains)",
+  "rarity": "Common",
   "stats": { "speed": 70, "agility": 85, "song": 60, "endurance": 75, "adaptability": 95 },
   "cry": "./audio/red-billed-quelea.ogg",
-  "desc": "Often considered the most numerous wild bird species on Earth, the red-billed quelea forms immense, shifting flocks that resemble living clouds. These vast groups move across African grasslands in search of seeds, dramatically reshaping landscapes as they feed."
+  "desc": "Often considered the most numerous wild bird species on Earth, the red-billed quelea forms immense, shifting flocks that resemble living clouds. These vast groups move across African grasslands in search of seeds, dramatically reshaping landscapes as they feed.",
+  "habitat": "Grasslands, savannas",
+  "origin": "Africa",
+  "stats-desc": "High agility and adaptability reflect flock coordination. Strong endurance supports long-distance movement. Moderate song reflects group communication.",
+  "ability-desc": "Swarm Cloud represents its massive flocking behavior. Moving as one unit, it confuses predators and maximizes feeding efficiency. This ability emphasizes numbers, coordination, and environmental impact."
 },
 {
   "id": 63,
@@ -821,9 +1125,15 @@
   "wingspan": "60–70 cm",
   "type": ["Columbid","Domestic"],
   "ability": "Inflate Display",
+  "diet": "Herbivore (seeds, grains)",
+  "rarity": "Rare",
   "stats": { "speed": 55, "agility": 50, "song": 40, "endurance": 60, "adaptability": 80 },
   "cry": "./audio/pouter.ogg",
-  "desc": "A selectively bred fancy pigeon, the White Brunner Pouter is known for its dramatically inflated crop, which it expands during courtship and display. Its upright stance and ornamental appearance make it a striking example of domestic avian breeding."
+  "desc": "A selectively bred fancy pigeon, the White Brunner Pouter is known for its dramatically inflated crop, which it expands during courtship and display. Its upright stance and ornamental appearance make it a striking example of domestic avian breeding.",
+  "habitat": "Domestic environments, aviaries",
+  "origin": "Worldwide (domesticated)",
+  "stats-desc": "Moderate adaptability reflects domestication. Lower agility and speed reflect ornamental breeding. Balanced endurance supports general activity.",
+  "ability-desc": "Inflate Display reflects its exaggerated crop expansion. Used for visual signaling, it enhances courtship presence. This ability emphasizes appearance, attraction, and selective breeding traits."
 },
 {
   "id": 64,
@@ -833,9 +1143,15 @@
   "wingspan": "105–112 cm",
   "type": "Wader",
   "ability": "Moon Hunter",
+  "diet": "Carnivore (fish, amphibians, crustaceans)",
+  "rarity": "Uncommon",
   "stats": { "speed": 60, "agility": 65, "song": 30, "endurance": 85, "adaptability": 85 },
   "cry": "./audio/night-heron.ogg",
-  "desc": "A stocky, red-eyed heron that becomes active at dusk, the black-crowned night heron hunts fish, amphibians, and crustaceans under cover of darkness. Its patient, stealthy movements allow it to thrive in wetlands and urban waterways alike."
+  "desc": "A stocky, red-eyed heron that becomes active at dusk, the black-crowned night heron hunts fish, amphibians, and crustaceans under cover of darkness. Its patient, stealthy movements allow it to thrive in wetlands and urban waterways alike.",
+  "habitat": "Wetlands, rivers, urban waterways",
+  "origin": "Worldwide",
+  "stats-desc": "High endurance supports nocturnal hunting. Moderate speed and agility reflect careful stalking. Adaptability is strong across natural and urban habitats.",
+  "ability-desc": "Moon Hunter reflects its nocturnal hunting behavior. By operating in low light, it avoids competition and ambushes prey effectively. This ability emphasizes stealth, timing, and night adaptation."
 },
 {
   "id": 65,
@@ -845,9 +1161,15 @@
   "wingspan": "30–35 cm",
   "type": ["Bird-of-Paradise","Tropical"],
   "ability": "Ballerina Dance",
+  "diet": "Omnivore (fruits, insects)",
+  "rarity": "Rare",
   "stats": { "speed": 55, "agility": 90, "song": 70, "endurance": 60, "adaptability": 65 },
   "cry": "./audio/parotia.ogg",
-  "desc": "Native to New Guinea, the Western Parotia performs one of the most intricate courtship dances in the avian world. Males clear a display ground and transform their flank feathers into a shimmering tutu-like skirt while rhythmically stepping and bowing."
+  "desc": "Native to New Guinea, the Western Parotia performs one of the most intricate courtship dances in the avian world. Males clear a display ground and transform their flank feathers into a shimmering tutu-like skirt while rhythmically stepping and bowing.",
+  "habitat": "Rainforests",
+  "origin": "New Guinea",
+  "stats-desc": "Very high agility supports complex display movements. Moderate endurance and speed reflect display-focused behavior. Adaptability is limited to tropical forests.",
+  "ability-desc": "Ballerina Dance reflects its elaborate courtship ritual. Through precise movement and feather display, it attracts mates. This ability emphasizes performance, coordination, and visual signaling."
 },
 {
   "id": 66,
@@ -857,9 +1179,15 @@
   "wingspan": "81–98 cm",
   "type": ["Waterfowl","Urban"],
   "ability": "Pond Glide",
+  "diet": "Omnivore (plants, insects, aquatic life)",
+  "rarity": "Common",
   "stats": { "speed": 65, "agility": 60, "song": 50, "endurance": 85, "adaptability": 95 },
   "cry": "./audio/mallard.ogg",
-  "desc": "One of the most widespread duck species, the mallard inhabits wetlands, parks, and city ponds worldwide. Males display iridescent green heads, while both sexes are highly adaptable, capable of thriving alongside human development."
+  "desc": "One of the most widespread duck species, the mallard inhabits wetlands, parks, and city ponds worldwide. Males display iridescent green heads, while both sexes are highly adaptable, capable of thriving alongside human development.",
+  "habitat": "Wetlands, lakes, urban ponds",
+  "origin": "Northern Hemisphere",
+  "stats-desc": "High adaptability reflects success in urban areas. Strong endurance supports migration. Moderate speed and agility suit both swimming and flight.",
+  "ability-desc": "Pond Glide reflects efficient movement across water. It conserves energy while traveling and feeding. This ability emphasizes versatility and ease in aquatic environments."
 },
 {
   "id": 67,
@@ -869,6 +1197,8 @@
   "wingspan": "28–30 cm",
   "type": ["Bird-of-Paradise","Tropical"],
   "ability": "Shadow Dance",
+  "diet": "Omnivore (fruits, insects)",
+  "rarity": "Rare",
   "stats": {
     "speed": 60,
     "agility": 90,
@@ -877,7 +1207,11 @@
     "adaptability": 65
   },
   "cry": "./audio/greater-lophorina.ogg",
-  "desc": "During courtship, the male Greater Lophorina transforms into a surreal display shape, spreading iridescent blue breast shields and velvety black feathers into an oval silhouette. This mesmerizing dance, paired with sharp calls, captivates potential mates."
+  "desc": "During courtship, the male Greater Lophorina transforms into a surreal display shape, spreading iridescent blue breast shields and velvety black feathers into an oval silhouette. This mesmerizing dance, paired with sharp calls, captivates potential mates.",
+  "habitat": "Rainforests",
+  "origin": "New Guinea",
+  "stats-desc": "High agility and song reflect display specialization. Moderate endurance supports repeated performances. Adaptability is limited to tropical habitats.",
+  "ability-desc": "Shadow Dance reflects its transformation into a striking visual form during courtship. This ability emphasizes illusion, precision, and attraction through dramatic display."
 },
 {
   "id": 68,
@@ -887,9 +1221,15 @@
   "wingspan": "28–32 cm",
   "type": "Songbird",
   "ability": "Urban Survivor",
+  "diet": "Omnivore (fruits, insects)",
+  "rarity": "Common",
   "stats": { "speed": 65, "agility": 75, "song": 70, "endurance": 70, "adaptability": 95 },
   "cry": "./audio/bulbul.ogg",
-  "desc": "A resilient and vocal species, the brown-eared bulbul thrives in forests, farmland, and busy cities alike. Opportunistic in diet, it consumes fruits and insects while adapting quickly to environmental change."
+  "desc": "A resilient and vocal species, the brown-eared bulbul thrives in forests, farmland, and busy cities alike. Opportunistic in diet, it consumes fruits and insects while adapting quickly to environmental change.",
+  "habitat": "Forests, farmland, urban areas",
+  "origin": "East Asia",
+  "stats-desc": "High adaptability reflects urban success. Balanced stats support varied lifestyle. Song aids communication in dense environments.",
+  "ability-desc": "Urban Survivor reflects its resilience in changing environments. It thrives in human-altered habitats. This ability emphasizes flexibility, resourcefulness, and survival."
 },
 {
   "id": 69,
@@ -899,9 +1239,15 @@
   "wingspan": "30–35 cm",
   "type": ["Parrot","Domestic"],
   "ability": "Fluff Aura",
+  "diet": "Herbivore (seeds, grains)",
+  "rarity": "Rare",
   "stats": { "speed": 50, "agility": 60, "song": 75, "endurance": 55, "adaptability": 70 },
   "cry": "./audio/feather-budgie.ogg",
-  "desc": "A rare domestic budgerigar variety, the Feather Duster Budgie is characterized by continuously growing, curled feathers that create a soft, fluffy appearance. This unusual trait requires careful human care and highlights the effects of selective breeding."
+  "desc": "A rare domestic budgerigar variety, the Feather Duster Budgie is characterized by continuously growing, curled feathers that create a soft, fluffy appearance. This unusual trait requires careful human care and highlights the effects of selective breeding.",
+  "habitat": "Domestic environments",
+  "origin": "Australia (domesticated variant)",
+  "stats-desc": "Moderate adaptability reflects reliance on human care. Lower agility due to feather structure. Song remains strong as a parrot trait.",
+  "ability-desc": "Fluff Aura reflects its exaggerated feather growth. While visually striking, it requires maintenance. This ability emphasizes appearance and the effects of selective breeding."
 },
 {
   "id": 70,
@@ -911,9 +1257,15 @@
   "wingspan": "40–45 cm",
   "type": "Songbird",
   "ability": "Rainbow Flash",
+  "diet": "Omnivore (insects, small invertebrates)",
+  "rarity": "Rare",
   "stats": { "speed": 60, "agility": 80, "song": 75, "endurance": 60, "adaptability": 65 },
   "cry": "./audio/fairy-pitta.ogg",
-  "desc": "Nicknamed the 'eight-colored bird,' the fairy pitta dazzles with vibrant blues, greens, reds, and yellows. This migratory forest species breeds in East Asia and winters in Southeast Asia, favoring dense understory habitats."
+  "desc": "Nicknamed the 'eight-colored bird,' the fairy pitta dazzles with vibrant blues, greens, reds, and yellows. This migratory forest species breeds in East Asia and winters in Southeast Asia, favoring dense understory habitats.",
+  "habitat": "Forests, dense understory",
+  "origin": "East Asia",
+  "stats-desc": "High agility supports movement through dense vegetation. Moderate speed and endurance reflect migratory lifestyle. Adaptability is limited to specific habitats.",
+  "ability-desc": "Rainbow Flash reflects its vivid coloration and quick movements. It stands out visually despite dense habitat. This ability emphasizes color signaling, agility, and presence."
 },
 {
   "id": 71,
@@ -923,9 +1275,15 @@
   "wingspan": "155–215 cm",
   "type": "Wader",
   "ability": "Sky Soarer",
+  "diet": "Carnivore (fish, amphibians, insects, small animals)",
+  "rarity": "Uncommon",
   "stats": { "speed": 70, "agility": 55, "song": 20, "endurance": 95, "adaptability": 75 },
   "cry": "./audio/stork.ogg",
-  "desc": "A tall, long-legged migratory bird, the white stork soars effortlessly on thermal currents during seasonal journeys between Europe and Africa. It nests on rooftops and poles, often living in close association with human settlements."
+  "desc": "A tall, long-legged migratory bird, the white stork soars effortlessly on thermal currents during seasonal journeys between Europe and Africa. It nests on rooftops and poles, often living in close association with human settlements.",
+  "habitat": "Wetlands, grasslands, farmlands, urban areas",
+  "origin": "Europe, Africa (migratory)",
+  "stats-desc": "Very high endurance reflects long migratory flights. Moderate speed and low agility reflect soaring rather than maneuvering. Very low song reflects non-vocal communication, while adaptability is strong due to coexistence with humans.",
+  "ability-desc": "Sky Soarer reflects its mastery of thermal gliding. By riding warm air currents, it conserves energy during long migrations. This ability emphasizes endurance, efficiency, and aerial control over vast distances."
 },
 {
   "id": 72,
@@ -935,9 +1293,15 @@
   "wingspan": "44–48 cm",
   "type": "Forest",
   "ability": "Crest Fan",
+  "diet": "Insectivore (larvae, beetles, insects)",
+  "rarity": "Uncommon",
   "stats": { "speed": 65, "agility": 75, "song": 60, "endurance": 65, "adaptability": 85 },
   "cry": "./audio/hoopoe.ogg",
-  "desc": "Distinctive for its cinnamon body and dramatic black-tipped crest, the hoopoe probes soil with its slender bill to locate insects and larvae. Its soft, repetitive 'hoo-poo' call carries across open woodlands and grasslands."
+  "desc": "Distinctive for its cinnamon body and dramatic black-tipped crest, the hoopoe probes soil with its slender bill to locate insects and larvae. Its soft, repetitive 'hoo-poo' call carries across open woodlands and grasslands.",
+  "habitat": "Woodlands, grasslands, savannas",
+  "origin": "Europe, Asia, Africa",
+  "stats-desc": "Balanced stats reflect versatile movement. Moderate endurance supports foraging. Song is notable but not dominant, while adaptability is high due to varied habitats.",
+  "ability-desc": "Crest Fan reflects its expressive crest display. The bird raises its crest to signal alertness or excitement. This ability emphasizes communication, awareness, and visual signaling."
 },
 {
   "id": 73,
@@ -947,9 +1311,15 @@
   "wingspan": "20–23 cm",
   "type": "Songbird",
   "ability": "Desert Chirp",
+  "diet": "Granivore (seeds, grasses)",
+  "rarity": "Common",
   "stats": { "speed": 60, "agility": 80, "song": 95, "endurance": 60, "adaptability": 90 },
   "cry": "./audio/zebra-finch.ogg",
-  "desc": "Native to Australia’s arid regions, the zebra finch is widely studied for its vocal learning and social communication. Males produce complex songs, making this species a key model in behavioral and neurological research."
+  "desc": "Native to Australia’s arid regions, the zebra finch is widely studied for its vocal learning and social communication. Males produce complex songs, making this species a key model in behavioral and neurological research.",
+  "habitat": "Grasslands, arid regions, savannas",
+  "origin": "Australia",
+  "stats-desc": "Very high song reflects vocal specialization. High adaptability suits harsh climates. Balanced mobility stats support active flock behavior.",
+  "ability-desc": "Desert Chirp reflects its vocal learning ability. Its songs are used for communication and mating. This ability emphasizes memory, learning, and social interaction."
 },
 {
   "id": 74,
@@ -959,9 +1329,15 @@
   "wingspan": "60–70 cm",
   "type": ["Domestic","Ground"],
   "ability": "Cloud Plumage",
+  "diet": "Omnivore (grains, insects, vegetation)",
+  "rarity": "Rare",
   "stats": { "speed": 30, "agility": 40, "song": 35, "endurance": 70, "adaptability": 80 },
   "cry": "./audio/silkie.ogg",
-  "desc": "A distinctive domestic chicken breed, the Silkie is known for its soft, fur-like plumage caused by unique feather structure. Gentle in temperament, it is often kept as an ornamental or companion bird."
+  "desc": "A distinctive domestic chicken breed, the Silkie is known for its soft, fur-like plumage caused by unique feather structure. Gentle in temperament, it is often kept as an ornamental or companion bird.",
+  "habitat": "Domestic environments, farms",
+  "origin": "Asia",
+  "stats-desc": "Low speed and agility reflect ground lifestyle. Moderate endurance supports daily activity. Adaptability is strong in human care environments.",
+  "ability-desc": "Cloud Plumage reflects its unique feather structure. Its soft feathers provide insulation and visual appeal. This ability emphasizes uniqueness, domestication, and ornamental traits."
 },
 {
   "id": 75,
@@ -971,9 +1347,15 @@
   "wingspan": "25–31 cm",
   "type": ["Songbird","Forest"],
   "ability": "Scarlet Anthem",
+  "diet": "Omnivore (seeds, fruits, insects)",
+  "rarity": "Common",
   "stats": { "speed": 65, "agility": 75, "song": 95, "endurance": 70, "adaptability": 90 },
   "cry": "./audio/cardinal.ogg",
-  "desc": "Brilliant scarlet in males and warm brown in females, the northern cardinal is a year-round resident of North America. Its clear whistling songs and adaptability to suburban gardens make it widely beloved."
+  "desc": "Brilliant scarlet in males and warm brown in females, the northern cardinal is a year-round resident of North America. Its clear whistling songs and adaptability to suburban gardens make it widely beloved.",
+  "habitat": "Forests, gardens, shrublands",
+  "origin": "North America",
+  "stats-desc": "Very high song reflects strong vocal presence. Good adaptability suits urban areas. Balanced stats support active lifestyle.",
+  "ability-desc": "Scarlet Anthem reflects its powerful singing. Used for territory and attraction, its voice carries strongly. This ability emphasizes clarity, dominance, and communication."
 },
 {
   "id": 76,
@@ -983,9 +1365,15 @@
   "wingspan": "42–68 cm",
   "type": "Raptor",
   "ability": "Forest Ambush",
+  "diet": "Carnivore (small birds)",
+  "rarity": "Uncommon",
   "stats": { "speed": 90, "agility": 95, "song": 20, "endurance": 80, "adaptability": 85 },
   "cry": "./audio/sharp-shinned-hawk.ogg",
-  "desc": "A swift and agile forest raptor, the sharp-shinned hawk specializes in hunting small birds. It darts through dense trees with remarkable precision, launching sudden ambushes using speed and maneuverability."
+  "desc": "A swift and agile forest raptor, the sharp-shinned hawk specializes in hunting small birds. It darts through dense trees with remarkable precision, launching sudden ambushes using speed and maneuverability.",
+  "habitat": "Forests, woodlands",
+  "origin": "North America",
+  "stats-desc": "Extremely high agility supports tight forest flight. High speed aids ambush. Low song reflects predatory nature.",
+  "ability-desc": "Forest Ambush reflects stealth hunting. It strikes quickly from cover. This ability emphasizes precision, speed, and surprise."
 },
 {
   "id": 77,
@@ -995,9 +1383,15 @@
   "wingspan": "35–41 cm",
   "type": "Wader",
   "ability": "Shore Dash",
+  "diet": "Carnivore (insects, crustaceans)",
+  "rarity": "Common",
   "stats": { "speed": 75, "agility": 85, "song": 40, "endurance": 70, "adaptability": 80 },
   "cry": "./audio/ringed-plover.ogg",
-  "desc": "A small coastal shorebird recognized by its bold black neck ring and orange legs. It runs in quick bursts across beaches and mudflats, pausing suddenly to scan for insects and small crustaceans while fiercely guarding nesting grounds."
+  "desc": "A small coastal shorebird recognized by its bold black neck ring and orange legs. It runs in quick bursts across beaches and mudflats, pausing suddenly to scan for insects and small crustaceans while fiercely guarding nesting grounds.",
+  "habitat": "Beaches, mudflats, coastal areas",
+  "origin": "Europe, Asia, Africa",
+  "stats-desc": "High agility and speed support quick bursts. Moderate endurance suits coastal life. Adaptability is strong.",
+  "ability-desc": "Shore Dash reflects burst movement. It runs quickly to catch prey or escape. This ability emphasizes reaction speed and agility."
 },
 {
   "id": 78,
@@ -1007,9 +1401,15 @@
   "wingspan": "210–230 cm",
   "type": ["Seabird","Tropical"],
   "ability": "Sky Pirate",
+  "diet": "Carnivore (fish, stolen prey)",
+  "rarity": "Uncommon",
   "stats": { "speed": 85, "agility": 80, "song": 30, "endurance": 95, "adaptability": 75 },
   "cry": "./audio/frigatebird.ogg",
-  "desc": "With extraordinarily long wings and a forked tail, the frigatebird is built for extended flight over tropical oceans. Males inflate a bright red throat pouch during courtship and are infamous for stealing food mid-air from other seabirds."
+  "desc": "With extraordinarily long wings and a forked tail, the frigatebird is built for extended flight over tropical oceans. Males inflate a bright red throat pouch during courtship and are infamous for stealing food mid-air from other seabirds.",
+  "habitat": "Tropical oceans, islands",
+  "origin": "Tropical regions worldwide",
+  "stats-desc": "Very high endurance supports long flight. High speed aids aerial pursuit. Low song reflects seabird traits.",
+  "ability-desc": "Sky Pirate reflects kleptoparasitism. It steals food mid-air. This ability emphasizes aerial dominance and opportunism."
 },
 {
   "id": 79,
@@ -1019,9 +1419,15 @@
   "wingspan": "170–180 cm",
   "type": "Raptor",
   "ability": "Crimson Glide",
+  "diet": "Carnivore (carrion, small animals)",
+  "rarity": "Uncommon",
   "stats": { "speed": 90, "agility": 85, "song": 25, "endurance": 85, "adaptability": 75 },
   "cry": "./audio/bateleur.ogg",
-  "desc": "A striking African eagle with vivid red facial skin and a short tail, the bateleur spends hours soaring above savannas. Its agile flight and keen eyesight allow it to locate carrion and small prey across vast distances."
+  "desc": "A striking African eagle with vivid red facial skin and a short tail, the bateleur spends hours soaring above savannas. Its agile flight and keen eyesight allow it to locate carrion and small prey across vast distances.",
+  "habitat": "Savannas, grasslands",
+  "origin": "Africa",
+  "stats-desc": "High speed and agility support aerial hunting. Strong endurance allows long soaring. Low song reflects raptor nature.",
+  "ability-desc": "Crimson Glide reflects graceful soaring. It scans large areas efficiently. This ability emphasizes aerial control and hunting precision."
 },
 {
   "id": 80,
@@ -1031,9 +1437,15 @@
   "wingspan": "47–53 cm",
   "type": "Columbid",
   "ability": "Soft Coos",
+  "diet": "Granivore (seeds)",
+  "rarity": "Uncommon",
   "stats": { "speed": 60, "agility": 65, "song": 80, "endurance": 70, "adaptability": 70 },
   "cry": "./audio/turtle-dove.ogg",
-  "desc": "A graceful migratory dove with warm brown plumage and patterned wings, the turtle dove is known for its soft, purring call. It travels between Europe and Africa seasonally, favoring open woodlands and farmland habitats."
+  "desc": "A graceful migratory dove with warm brown plumage and patterned wings, the turtle dove is known for its soft, purring call. It travels between Europe and Africa seasonally, favoring open woodlands and farmland habitats.",
+  "habitat": "Woodlands, farmlands",
+  "origin": "Europe, Africa (migratory)",
+  "stats-desc": "Moderate stats reflect balanced flight. Strong song reflects vocal nature. Adaptability is moderate.",
+  "ability-desc": "Soft Coos reflects gentle vocalizations. Used for bonding and communication. This ability emphasizes calmness and social interaction."
 },
 {
   "id": 81,
@@ -1043,9 +1455,15 @@
   "wingspan": "35–40 cm",
   "type": ["Songbird","Urban"],
   "ability": "Mimic Master",
+  "diet": "Omnivore (insects, fruits, scraps)",
+  "rarity": "Common",
   "stats": { "speed": 70, "agility": 75, "song": 95, "endurance": 75, "adaptability": 95 },
   "cry": "./audio/mynah.ogg",
-  "desc": "An intelligent and highly adaptable bird commonly found in cities and towns. Mynahs are excellent vocal mimics and can imitate human speech and environmental sounds. Their bold personality allows them to thrive almost anywhere."
+  "desc": "An intelligent and highly adaptable bird commonly found in cities and towns. Mynahs are excellent vocal mimics and can imitate human speech and environmental sounds. Their bold personality allows them to thrive almost anywhere.",
+  "habitat": "Urban areas, forests, farmland",
+  "origin": "Asia",
+  "stats-desc": "Very high song and adaptability reflect intelligence and mimicry. Balanced speed and endurance support active urban life.",
+  "ability-desc": "Mimic Master reflects its vocal imitation skills. It copies sounds to communicate and adapt. This ability emphasizes intelligence, learning, and social interaction."
 },
 {
   "id": 82,
@@ -1055,9 +1473,15 @@
   "wingspan": "22–25 cm",
   "type": ["Songbird","Tit"],
   "ability": "Bold Call",
+  "diet": "Omnivore (insects, seeds)",
+  "rarity": "Common",
   "stats": { "speed": 65, "agility": 85, "song": 90, "endurance": 65, "adaptability": 90 },
   "cry": "./audio/great-tit.ogg",
-  "desc": "A small but confident woodland bird with a bright yellow belly and black head. It is known for its loud, repetitive song and curious nature. Great tits are clever problem-solvers and adapt well to gardens and forests alike."
+  "desc": "A small but confident woodland bird with a bright yellow belly and black head. It is known for its loud, repetitive song and curious nature. Great tits are clever problem-solvers and adapt well to gardens and forests alike.",
+  "habitat": "Forests, gardens, parks",
+  "origin": "Europe, Asia",
+  "stats-desc": "High agility and song reflect active movement and vocal strength. Adaptability is strong across environments.",
+  "ability-desc": "Bold Call reflects its loud vocal presence. Used for territory and communication. This ability emphasizes confidence and awareness."
 },
 {
   "id": 83,
@@ -1067,9 +1491,15 @@
   "wingspan": "270–320 cm",
   "type": "Raptor",
   "ability": "Andean Soar",
+  "diet": "Scavenger (carrion)",
+  "rarity": "Rare",
   "stats": { "speed": 75, "agility": 55, "song": 20, "endurance": 100, "adaptability": 60 },
   "cry": "./audio/condor.ogg",
-  "desc": "One of the largest flying birds in the world, soaring high above mountain ranges on thermal currents. With massive wings and incredible stamina, it can travel vast distances without flapping. It plays a vital ecological role as a scavenger."
+  "desc": "One of the largest flying birds in the world, soaring high above mountain ranges on thermal currents. With massive wings and incredible stamina, it can travel vast distances without flapping. It plays a vital ecological role as a scavenger.",
+  "habitat": "Mountains, cliffs",
+  "origin": "South America (Andes)",
+  "stats-desc": "Maximum endurance supports long soaring. Low agility reflects large size. Adaptability is moderate.",
+  "ability-desc": "Andean Soar reflects thermal gliding. It travels vast distances efficiently. This ability emphasizes endurance and aerial mastery."
 },
 {
   "id": 84,
@@ -1079,9 +1509,15 @@
   "wingspan": "250–350 cm",
   "type": "Seabird",
   "ability": "Endless Glide",
+  "diet": "Carnivore (fish, squid)",
+  "rarity": "Uncommon",
   "stats": { "speed": 80, "agility": 60, "song": 25, "endurance": 100, "adaptability": 70 },
   "cry": "./audio/albatross.ogg",
-  "desc": "A legendary ocean wanderer with some of the longest wingspans of any bird. Albatrosses can glide over waves for hours using dynamic soaring techniques. They are symbols of endurance and life at sea."
+  "desc": "A legendary ocean wanderer with some of the longest wingspans of any bird. Albatrosses can glide over waves for hours using dynamic soaring techniques. They are symbols of endurance and life at sea.",
+  "habitat": "Open oceans",
+  "origin": "Southern oceans",
+  "stats-desc": "Extreme endurance reflects long-distance travel. Moderate agility suits gliding.",
+  "ability-desc": "Endless Glide reflects energy-efficient flight. It uses wind currents to travel far. This ability emphasizes efficiency and stamina."
 },
 {
   "id": 85,
@@ -1091,9 +1527,15 @@
   "wingspan": "58–63 cm",
   "type": "Seabird",
   "ability": "Cliff Diver",
+  "diet": "Carnivore (fish)",
+  "rarity": "Uncommon",
   "stats": { "speed": 70, "agility": 80, "song": 35, "endurance": 75, "adaptability": 70 },
   "cry": "./audio/tufted-puffin.ogg",
-  "desc": "A striking seabird with bright orange bill and elegant golden head tufts during breeding season. It nests on steep coastal cliffs and dives skillfully underwater to catch fish."
+  "desc": "A striking seabird with bright orange bill and elegant golden head tufts during breeding season. It nests on steep coastal cliffs and dives skillfully underwater to catch fish.",
+  "habitat": "Coastal cliffs, oceans",
+  "origin": "North Pacific",
+  "stats-desc": "High agility supports diving. Moderate endurance reflects foraging cycles.",
+  "ability-desc": "Cliff Diver reflects its plunge-diving skill. It catches fish underwater. This ability emphasizes precision and aquatic hunting."
 },
 {
   "id": 86,
@@ -1103,9 +1545,15 @@
   "wingspan": "70–90 cm",
   "type": "Ground",
   "ability": "Flash Plumage",
+  "diet": "Omnivore (seeds, insects)",
+  "rarity": "Common",
   "stats": { "speed": 65, "agility": 60, "song": 40, "endurance": 70, "adaptability": 85 },
   "cry": "./audio/pheasant.ogg",
-  "desc": "A ground-dwelling bird known for its dazzling iridescent feathers and long tail. Males display brilliant colors to attract mates, while females are camouflaged for protection."
+  "desc": "A ground-dwelling bird known for its dazzling iridescent feathers and long tail. Males display brilliant colors to attract mates, while females are camouflaged for protection.",
+  "habitat": "Grasslands, forests",
+  "origin": "Asia (introduced worldwide)",
+  "stats-desc": "Balanced stats reflect ground lifestyle. Adaptability is high.",
+  "ability-desc": "Flash Plumage reflects visual display. Used in courtship. This ability emphasizes attraction and signaling."
 },
 {
   "id": 87,
@@ -1115,9 +1563,15 @@
   "wingspan": "15 cm",
   "type": ["Flightless","Extinct"],
   "ability": "Silent Diver",
+  "diet": "Carnivore (fish)",
+  "rarity": "Extinct",
   "stats": { "speed": 40, "agility": 50, "song": 10, "endurance": 80, "adaptability": 20 },
   "cry": "./audio/great-auk.ogg",
-  "desc": "A large flightless seabird that once inhabited the North Atlantic. It was an expert swimmer and diver but was hunted to extinction in the 19th century."
+  "desc": "A large flightless seabird that once inhabited the North Atlantic. It was an expert swimmer and diver but was hunted to extinction in the 19th century.",
+  "habitat": "Coastal islands",
+  "origin": "North Atlantic",
+  "stats-desc": "Low adaptability reflects extinction. Moderate endurance supports diving.",
+  "ability-desc": "Silent Diver reflects underwater hunting. It swam efficiently. This ability emphasizes aquatic adaptation."
 },
 {
   "id": 88,
@@ -1127,9 +1581,15 @@
   "wingspan": "20 cm",
   "type": ["Flightless","Ground"],
   "ability": "Outback Sprint",
+  "diet": "Omnivore (plants, insects)",
+  "rarity": "Common",
   "stats": { "speed": 85, "agility": 55, "song": 30, "endurance": 90, "adaptability": 85 },
   "cry": "./audio/emu.ogg",
-  "desc": "A large flightless bird native to Australia, capable of running at high speeds across open plains. Emus are resilient and well-adapted to harsh environments."
+  "desc": "A large flightless bird native to Australia, capable of running at high speeds across open plains. Emus are resilient and well-adapted to harsh environments.",
+  "habitat": "Grasslands, savannas",
+  "origin": "Australia",
+  "stats-desc": "High speed and endurance reflect running ability. Adaptability is strong.",
+  "ability-desc": "Outback Sprint reflects running speed. It escapes threats quickly. This ability emphasizes stamina and mobility."
 },
 {
   "id": 89,
@@ -1139,9 +1599,15 @@
   "wingspan": "25–34 cm",
   "type": "Songbird",
   "ability": "Sky Sweep",
+  "diet": "Insectivore",
+  "rarity": "Common",
   "stats": { "speed": 95, "agility": 95, "song": 75, "endurance": 80, "adaptability": 90 },
   "cry": "./audio/swallow.ogg",
-  "desc": "A fast and graceful aerial insect hunter. Swallows perform agile maneuvers mid-flight and migrate long distances between continents."
+  "desc": "A fast and graceful aerial insect hunter. Swallows perform agile maneuvers mid-flight and migrate long distances between continents.",
+  "habitat": "Open skies, fields, wetlands",
+  "origin": "Worldwide",
+  "stats-desc": "Extreme speed and agility support flight. High endurance supports migration.",
+  "ability-desc": "Sky Sweep reflects aerial hunting. It catches insects mid-air. This ability emphasizes speed and precision."
 },
 {
   "id": 90,
@@ -1151,9 +1617,15 @@
   "wingspan": "125–144 cm",
   "type": ["Domestic","Ground"],
   "ability": "Thunder Gobble",
+  "diet": "Omnivore (seeds, insects, plants)",
+  "rarity": "Common",
   "stats": { "speed": 55, "agility": 50, "song": 45, "endurance": 80, "adaptability": 85 },
   "cry": "./audio/turkey.ogg",
-  "desc": "A large ground bird known for its distinctive gobbling call and impressive tail display. Wild turkeys are surprisingly strong fliers over short distances."
+  "desc": "A large ground bird known for its distinctive gobbling call and impressive tail display. Wild turkeys are surprisingly strong fliers over short distances.",
+  "habitat": "Forests, farms",
+  "origin": "North America",
+  "stats-desc": "Moderate stats reflect ground lifestyle. Strong endurance supports survival.",
+  "ability-desc": "Thunder Gobble reflects its loud vocalization. Used for dominance and mating. This ability emphasizes presence and communication."
 },
 {
   "id": 91,
@@ -1163,9 +1635,15 @@
   "wingspan": "230–260 cm",
   "type": "Wader",
   "ability": "Prehistoric Gaze",
+  "diet": "Fish, amphibians, lungfish",
+  "rarity": "Rare",
   "stats": { "speed": 60, "agility": 55, "song": 15, "endurance": 95, "adaptability": 65 },
   "cry": "./audio/shoebill.ogg",
-  "desc": "A massive marsh bird with an enormous shoe-shaped bill. It stands motionless for long periods before striking swiftly at fish and amphibians."
+  "desc": "A massive marsh bird with an enormous shoe-shaped bill. It stands motionless for long periods before striking swiftly at fish and amphibians.",
+  "habitat": "Swamps, marshes, wetlands",
+  "origin": "Central Africa",
+  "stats-desc": "Moderate speed and agility reflect slow stalking behavior. Extremely high endurance supports long periods of stillness. Very low song aligns with its silent nature, while adaptability is moderate due to specialized habitat.",
+  "ability-desc": "Prehistoric Gaze reflects its motionless hunting style. By remaining perfectly still, it intimidates prey before striking suddenly. This ability emphasizes patience, intimidation, and precision."
 },
 {
   "id": 92,
@@ -1175,9 +1653,15 @@
   "wingspan": "47–63 cm",
   "type": "Seabird",
   "ability": "Colorful Diver",
+  "diet": "Fish, crustaceans",
+  "rarity": "Uncommon",
   "stats": { "speed": 70, "agility": 80, "song": 40, "endurance": 75, "adaptability": 70 },
   "cry": "./audio/atlantic-puffin.ogg",
-  "desc": "Often called the 'clown of the sea' for its bright bill. It nests in burrows on cliffs and dives underwater to catch small fish."
+  "desc": "Often called the 'clown of the sea' for its bright bill. It nests in burrows on cliffs and dives underwater to catch small fish.",
+  "habitat": "Coastal cliffs, open ocean",
+  "origin": "North Atlantic",
+  "stats-desc": "High agility supports underwater maneuvering. Moderate speed and endurance reflect diving lifestyle. Low song matches seabird behavior, while adaptability is moderate.",
+  "ability-desc": "Colorful Diver reflects its skill in underwater hunting. It uses rapid wing strokes to pursue fish. This ability emphasizes agility, precision, and aquatic adaptation."
 },
 {
   "id": 93,
@@ -1187,9 +1671,15 @@
   "wingspan": "40–42 cm",
   "type": "Seabird",
   "ability": "Silver Mustache",
+  "diet": "Fish, small marine animals",
+  "rarity": "Uncommon",
   "stats": { "speed": 75, "agility": 85, "song": 60, "endurance": 75, "adaptability": 70 },
   "cry": "./audio/inca-tern.ogg",
-  "desc": "A dark seabird with distinctive white curled feathers resembling a mustache. It inhabits the Pacific coasts of South America."
+  "desc": "A dark seabird with distinctive white curled feathers resembling a mustache. It inhabits the Pacific coasts of South America.",
+  "habitat": "Coastal cliffs, rocky shores",
+  "origin": "South America (Pacific coast)",
+  "stats-desc": "High speed and agility support aerial hunting. Moderate endurance allows sustained flight. Song is moderate, while adaptability is fairly balanced.",
+  "ability-desc": "Silver Mustache highlights its unique facial feature used in display. This ability emphasizes identity, recognition, and social signaling."
 },
 {
   "id": 94,
@@ -1199,9 +1689,15 @@
   "wingspan": "76-89 cm",
   "type": ["Seabird","Flightless"],
   "ability": "Ice Endure",
+  "diet": "Fish, squid",
+  "rarity": "Uncommon",
   "stats": { "speed": 50, "agility": 60, "song": 35, "endurance": 100, "adaptability": 85 },
   "cry": "./audio/king-penguin.ogg",
-  "desc": "The largest penguin species, surviving brutal Antarctic winters. They huddle together for warmth and can dive hundreds of meters in search of fish."
+  "desc": "The largest penguin species, surviving brutal Antarctic winters. They huddle together for warmth and can dive hundreds of meters in search of fish.",
+  "habitat": "Antarctic coasts, icy seas",
+  "origin": "Antarctica",
+  "stats-desc": "Maximum endurance reflects survival in extreme cold. Moderate mobility stats suit swimming. Low song is typical, while adaptability is high in polar conditions.",
+  "ability-desc": "Ice Endure reflects its resilience to freezing environments. Through insulation and group behavior, it survives extreme cold. This ability emphasizes endurance and cooperation."
 },
 {
   "id": 95,
@@ -1211,9 +1707,15 @@
   "wingspan": "22.2-25.6 cm",
   "type": ["Seabird","Flightless"],
   "ability": "Rapid Dive",
+  "diet": "Fish, krill",
+  "rarity": "Common",
   "stats": { "speed": 85, "agility": 75, "song": 30, "endurance": 85, "adaptability": 80 },
   "cry": "./audio/gentoo-penguin.ogg",
-  "desc": "Recognizable by its white head stripe, this penguin is one of the fastest underwater swimmers among penguin species."
+  "desc": "Recognizable by its white head stripe, this penguin is one of the fastest underwater swimmers among penguin species.",
+  "habitat": "Antarctic coasts, islands",
+  "origin": "Southern Ocean",
+  "stats-desc": "High speed reflects underwater swimming ability. Good endurance supports long dives. Low song aligns with species traits, while adaptability is strong.",
+  "ability-desc": "Rapid Dive emphasizes its speed underwater. It chases prey with quick bursts of motion. This ability highlights aquatic agility and hunting efficiency."
 },
 {
   "id": 96,
@@ -1223,9 +1725,15 @@
   "wingspan": "46-71 cm",
   "type": ["Seabird","Flightless"],
   "ability": "Ice Runner",
+  "diet": "Krill, fish",
+  "rarity": "Common",
   "stats": { "speed": 65, "agility": 70, "song": 30, "endurance": 90, "adaptability": 85 },
   "cry": "./audio/adelie-penguin.ogg",
-  "desc": "A hardy Antarctic penguin with a bold white eye ring. It is energetic on land and a capable swimmer in icy waters."
+  "desc": "A hardy Antarctic penguin with a bold white eye ring. It is energetic on land and a capable swimmer in icy waters.",
+  "habitat": "Antarctic coasts",
+  "origin": "Antarctica",
+  "stats-desc": "High endurance supports cold survival. Balanced mobility stats reflect versatility. Low song fits species behavior, while adaptability is strong.",
+  "ability-desc": "Ice Runner reflects its energetic movement across ice. It travels efficiently between nesting and feeding grounds. This ability emphasizes stamina and resilience."
 },
 {
   "id": 97,
@@ -1235,9 +1743,15 @@
   "wingspan": "68-76 cm",
   "type": ["Seabird","Flightless"],
   "ability": "Polar Call",
+  "diet": "Krill, fish",
+  "rarity": "Common",
   "stats": { "speed": 70, "agility": 70, "song": 35, "endurance": 85, "adaptability": 80 },
   "cry": "./audio/chinstrap-penguin.ogg",
-  "desc": "Named for the thin black line under its chin, this penguin thrives in large colonies across Antarctica."
+  "desc": "Named for the thin black line under its chin, this penguin thrives in large colonies across Antarctica.",
+  "habitat": "Antarctic islands, coasts",
+  "origin": "Antarctica",
+  "stats-desc": "Balanced stats reflect colony-based lifestyle. High endurance supports harsh conditions. Adaptability is solid within polar environments.",
+  "ability-desc": "Polar Call reflects its vocal communication in dense colonies. This ability emphasizes coordination and social interaction."
 },
 {
   "id": 98,
@@ -1247,9 +1761,15 @@
   "wingspan": "50-55 cm",
   "type": ["Seabird","Flightless"],
   "ability": "Cliff Hopper",
+  "diet": "Krill, fish",
+  "rarity": "Uncommon",
   "stats": { "speed": 70, "agility": 85, "song": 35, "endurance": 80, "adaptability": 75 },
   "cry": "./audio/rockhopper-penguin.ogg",
-  "desc": "Distinguished by its spiky yellow crest feathers, it hops energetically across rocky shorelines."
+  "desc": "Distinguished by its spiky yellow crest feathers, it hops energetically across rocky shorelines.",
+  "habitat": "Rocky coasts, islands",
+  "origin": "Southern Oceans",
+  "stats-desc": "High agility reflects hopping movement. Good endurance supports coastal life. Adaptability is moderate.",
+  "ability-desc": "Cliff Hopper highlights its ability to navigate rocky terrain. This ability emphasizes agility and balance."
 },
 {
   "id": 99,
@@ -1259,9 +1779,15 @@
   "wingspan": "Extinct",
   "type": ["Seabird","Extinct"],
   "ability": "Ancient Giant",
+  "diet": "Fish (estimated)",
+  "rarity": "Extinct",
   "stats": { "speed": 40, "agility": 40, "song": 10, "endurance": 95, "adaptability": 30 },
   "cry": "./audio/giant-penguin.ogg",
-  "desc": "An extinct prehistoric penguin species that stood much taller than modern penguins. Fossil evidence suggests it was a powerful swimmer in ancient seas."
+  "desc": "An extinct prehistoric penguin species that stood much taller than modern penguins. Fossil evidence suggests it was a powerful swimmer in ancient seas.",
+  "habitat": "Ancient seas",
+  "origin": "Prehistoric Antarctica",
+  "stats-desc": "Low agility reflects large size. High endurance suggests strong swimming ability. Very low adaptability due to extinction.",
+  "ability-desc": "Ancient Giant reflects its massive size advantage. This ability emphasizes power, scale, and prehistoric dominance."
 },
 {
   "id": 100,
@@ -1271,9 +1797,15 @@
   "wingspan": "50 cm",
   "type": ["Forest","Extinct"],
   "ability": "First Flight",
+  "diet": "Insects, small animals",
+  "rarity": "Extinct",
   "stats": { "speed": 60, "agility": 65, "song": 10, "endurance": 60, "adaptability": 50 },
   "cry": "./audio/archaeopteryx.ogg",
-  "desc": "A transitional fossil species showing both dinosaur and bird features. It represents one of the earliest known examples of feathered flight."
+  "desc": "A transitional fossil species showing both dinosaur and bird features. It represents one of the earliest known examples of feathered flight.",
+  "habitat": "Ancient forests",
+  "origin": "Late Jurassic (Europe)",
+  "stats-desc": "Balanced stats reflect early flight capability. Low song matches primitive traits. Adaptability is moderate for its time.",
+  "ability-desc": "First Flight symbolizes the origin of avian flight. This ability emphasizes evolution, transition, and the beginnings of aerial adaptation."
 },
 {
   "id": 101,
@@ -1283,9 +1815,15 @@
   "wingspan": "115–150 cm",
   "type": "Corvid",
   "ability": "Shadow Intellect",
+  "diet": "Omnivore (carrion, insects, small animals, grains)",
+  "rarity": "Uncommon",
   "stats": { "speed": 75, "agility": 80, "song": 70, "endurance": 85, "adaptability": 100 },
   "cry": "./audio/raven.ogg",
-  "desc": "A highly intelligent and adaptable bird known for problem-solving skills and complex vocalizations. Ravens thrive in diverse habitats and are often associated with mythology."
+  "desc": "A highly intelligent and adaptable bird known for problem-solving skills and complex vocalizations. Ravens thrive in diverse habitats and are often associated with mythology.",
+  "habitat": "Forests, mountains, tundra, urban areas",
+  "origin": "Northern Hemisphere",
+  "stats-desc": "High adaptability and intelligence are reflected in maximum adaptability. Strong endurance and agility support survival in varied environments. Song is moderate for communication and mimicry.",
+  "ability-desc": "Shadow Intellect highlights its exceptional intelligence. Ravens solve problems, use tools, and adapt behavior quickly. This ability emphasizes cognition, learning, and environmental mastery."
 },
 {
   "id": 102,
@@ -1295,9 +1833,15 @@
   "wingspan": "45–48 cm",
   "type": "Ground",
   "ability": "Field Burst",
+  "diet": "Seeds, grains, insects",
+  "rarity": "Common",
   "stats": { "speed": 65, "agility": 60, "song": 50, "endurance": 75, "adaptability": 80 },
   "cry": "./audio/partridge.ogg",
-  "desc": "A plump ground-dwelling bird found in open farmland and grasslands. It relies on camouflage and short explosive flights to escape predators."
+  "desc": "A plump ground-dwelling bird found in open farmland and grasslands. It relies on camouflage and short explosive flights to escape predators.",
+  "habitat": "Farmlands, grasslands",
+  "origin": "Europe, Asia",
+  "stats-desc": "Moderate stats reflect balanced survival strategy. Endurance supports ground living, while adaptability is strong across farmland environments.",
+  "ability-desc": "Field Burst reflects its sudden takeoff escape. This ability emphasizes reaction speed and survival through surprise movement."
 },
 {
   "id": 103,
@@ -1307,6 +1851,8 @@
   "wingspan": "48–53 cm",
   "type": "Parrot",
   "ability": "Social Architect",
+  "diet": "Seeds, fruits, vegetables",
+  "rarity": "Uncommon",
   "stats": {
     "speed": 65,
     "agility": 80,
@@ -1315,7 +1861,11 @@
     "adaptability": 95
   },
   "cry": "./audio/quaker-parrot.ogg",
-  "desc": "A highly social and intelligent parrot recognizable by its green body and gray chest. Unlike most parrots, quaker parrots build large communal stick nests that can house multiple families. They are excellent vocal learners and thrive in urban environments, often forming noisy, close-knit flocks."
+  "desc": "A highly social and intelligent parrot recognizable by its green body and gray chest. Unlike most parrots, quaker parrots build large communal stick nests that can house multiple families. They are excellent vocal learners and thrive in urban environments, often forming noisy, close-knit flocks.",
+  "habitat": "Woodlands, urban areas",
+  "origin": "South America",
+  "stats-desc": "High song and adaptability reflect vocal learning and urban success. Strong agility supports active flock behavior.",
+  "ability-desc": "Social Architect highlights its nest-building behavior. It creates large communal structures, emphasizing cooperation, intelligence, and social living."
 },
 {
   "id": 104,
@@ -1325,6 +1875,8 @@
   "wingspan": "99–112 cm",
   "type": ["Parrot", "Tropical"],
   "ability": "Crimson Radiance",
+  "diet": "Fruits, nuts, seeds",
+  "rarity": "Rare",
   "stats": {
     "speed": 80,
     "agility": 75,
@@ -1333,7 +1885,11 @@
     "adaptability": 85
   },
   "cry": "./audio/scarlet-macaw.ogg",
-  "desc": "One of the most striking parrots in the world, displaying brilliant red plumage accented with yellow and blue wings. Found in tropical rainforests of Central and South America, it is known for its strong beak, loud calls, and high intelligence. Scarlet macaws form deep social bonds and are symbols of vibrant rainforest ecosystems."
+  "desc": "One of the most striking parrots in the world, displaying brilliant red plumage accented with yellow and blue wings. Found in tropical rainforests of Central and South America, it is known for its strong beak, loud calls, and high intelligence. Scarlet macaws form deep social bonds and are symbols of vibrant rainforest ecosystems.",
+  "habitat": "Tropical rainforests",
+  "origin": "Central and South America",
+  "stats-desc": "High song and endurance reflect vocal strength and long flights. Adaptability is strong within tropical ecosystems.",
+  "ability-desc": "Crimson Radiance reflects its vivid coloration and presence. This ability emphasizes visibility, attraction, and dominance in social and ecological settings."
 },
 {
   "id": 105,
@@ -1343,6 +1899,8 @@
   "wingspan": "180–230 cm",
   "type": "Raptor",
   "ability": "Sky Dominion",
+  "diet": "Fish, small mammals",
+  "rarity": "Rare",
   "stats": {
     "speed": 85,
     "agility": 75,
@@ -1351,7 +1909,11 @@
     "adaptability": 90
   },
   "cry": "./audio/bald-eagle.ogg",
-  "desc": "A powerful bird of prey recognized by its white head and dark brown body. Native to North America, it soars effortlessly over lakes and coastlines while scanning for fish with exceptional eyesight. Known as a national symbol of strength and freedom, the bald eagle combines endurance, sharp hunting skills, and commanding presence."
+  "desc": "A powerful bird of prey recognized by its white head and dark brown body. Native to North America, it soars effortlessly over lakes and coastlines while scanning for fish with exceptional eyesight. Known as a national symbol of strength and freedom, the bald eagle combines endurance, sharp hunting skills, and commanding presence.",
+  "habitat": "Lakes, rivers, coastal areas",
+  "origin": "North America",
+  "stats-desc": "High endurance and speed reflect soaring ability. Strong adaptability supports varied habitats.",
+  "ability-desc": "Sky Dominion reflects aerial dominance. This ability emphasizes control of the skies and powerful hunting capability."
 },
 {
   "id": 106,
@@ -1361,9 +1923,15 @@
   "wingspan": "160–200 cm",
   "type": "Waterfowl",
   "ability": "Midnight Glide",
+  "diet": "Aquatic plants, algae",
+  "rarity": "Uncommon",
   "stats": { "speed": 65, "agility": 60, "song": 40, "endurance": 85, "adaptability": 75 },
   "cry": "./audio/black-swan.ogg",
-  "desc": "A large Australian waterbird known for its dramatic black plumage and long curved neck. Despite its elegant appearance, it is strong in flight and highly territorial during breeding season."
+  "desc": "A large Australian waterbird known for its dramatic black plumage and long curved neck. Despite its elegant appearance, it is strong in flight and highly territorial during breeding season.",
+  "habitat": "Lakes, wetlands",
+  "origin": "Australia",
+  "stats-desc": "High endurance reflects sustained swimming and flight. Moderate agility and adaptability suit wetland life.",
+  "ability-desc": "Midnight Glide reflects its smooth and graceful movement. This ability emphasizes elegance and control on water."
 },
 {
   "id": 107,
@@ -1373,9 +1941,15 @@
   "wingspan": "65–80 cm",
   "type": ["Forest", "Generalist"],
   "ability": "Laughing Call",
+  "diet": "Insects, reptiles, small animals",
+  "rarity": "Common",
   "stats": { "speed": 70, "agility": 65, "song": 85, "endurance": 75, "adaptability": 85 },
   "cry": "./audio/kookaburra.ogg",
-  "desc": "A robust woodland kingfisher famous for its loud, laughter-like call. It hunts insects, reptiles, and small mammals from elevated perches and adapts well to suburban environments."
+  "desc": "A robust woodland kingfisher famous for its loud, laughter-like call. It hunts insects, reptiles, and small mammals from elevated perches and adapts well to suburban environments.",
+  "habitat": "Forests, woodlands, urban areas",
+  "origin": "Australia",
+  "stats-desc": "High song reflects vocal dominance. Good adaptability supports survival in mixed environments.",
+  "ability-desc": "Laughing Call reflects its iconic vocalization. This ability emphasizes communication, territory marking, and presence."
 },
 {
   "id": 108,
@@ -1385,9 +1959,15 @@
   "wingspan": "18–22 cm",
   "type": ["Songbird", "Forest"],
   "ability": "Blush Melody",
+  "diet": "Insects",
+  "rarity": "Uncommon",
   "stats": { "speed": 70, "agility": 80, "song": 85, "endurance": 60, "adaptability": 65 },
   "cry": "./audio/pink-robin.ogg",
-  "desc": "A small temperate forest bird with soft grey plumage and a vivid pink breast. It produces gentle, high notes while foraging quietly among dense undergrowth."
+  "desc": "A small temperate forest bird with soft grey plumage and a vivid pink breast. It produces gentle, high notes while foraging quietly among dense undergrowth.",
+  "habitat": "Temperate forests",
+  "origin": "Australia",
+  "stats-desc": "High agility and song reflect forest life. Moderate endurance fits small body size.",
+  "ability-desc": "Blush Melody reflects its soft vocalizations. This ability emphasizes subtle communication and calm presence."
 },
 {
   "id": 109,
@@ -1397,9 +1977,15 @@
   "wingspan": "50–60 cm",
   "type": ["Flightless", "Ground"],
   "ability": "Alpine Graze",
+  "diet": "Grass, shoots",
+  "rarity": "Rare",
   "stats": { "speed": 30, "agility": 40, "song": 35, "endurance": 85, "adaptability": 50 },
   "cry": "./audio/takahe.ogg",
-  "desc": "A rare and heavy-bodied rail native to New Zealand. Though flightless, it uses its strong legs to move through alpine grasslands and feeds primarily on tough mountain vegetation."
+  "desc": "A rare and heavy-bodied rail native to New Zealand. Though flightless, it uses its strong legs to move through alpine grasslands and feeds primarily on tough mountain vegetation.",
+  "habitat": "Alpine grasslands",
+  "origin": "New Zealand",
+  "stats-desc": "Low mobility reflects flightlessness. High endurance supports survival in rugged terrain.",
+  "ability-desc": "Alpine Graze reflects its feeding strategy. This ability emphasizes resilience and adaptation to harsh environments."
 },
 {
   "id": 110,
@@ -1409,9 +1995,15 @@
   "wingspan": "150–180 cm",
   "type": ["Flightless", "Tropical"],
   "ability": "Rainforest Charge",
+  "diet": "Fruits, small animals",
+  "rarity": "Rare",
   "stats": { "speed": 80, "agility": 60, "song": 20, "endurance": 95, "adaptability": 70 },
   "cry": "./audio/cassowary.ogg",
-  "desc": "A massive rainforest bird equipped with powerful legs and a helmet-like casque. Though unable to fly, it plays a crucial ecological role as a seed disperser in tropical forests."
+  "desc": "A massive rainforest bird equipped with powerful legs and a helmet-like casque. Though unable to fly, it plays a crucial ecological role as a seed disperser in tropical forests.",
+  "habitat": "Tropical rainforests",
+  "origin": "New Guinea, Australia",
+  "stats-desc": "High speed and endurance reflect powerful movement. Low song aligns with behavior, while adaptability is moderate.",
+  "ability-desc": "Rainforest Charge reflects its powerful forward attacks. This ability emphasizes strength, speed, and territorial dominance."
 },
 {
   "id": 111,
@@ -1421,9 +2013,15 @@
   "wingspan": "50–60 cm",
   "type": ["Ground", "Domestic"],
   "ability": "Alarm Chorus",
+  "diet": "Omnivore (insects, seeds, small invertebrates)",
+  "rarity": "Common",
   "stats": { "speed": 65, "agility": 60, "song": 70, "endurance": 80, "adaptability": 85 },
   "cry": "./audio/guinea-fowl.ogg",
-  "desc": "A hardy ground-dwelling bird commonly domesticated for pest control. It emits loud calls when alarmed and thrives in both savanna landscapes and farm environments."
+  "desc": "A hardy ground-dwelling bird commonly domesticated for pest control. It emits loud calls when alarmed and thrives in both savanna landscapes and farm environments.",
+  "habitat": "Savannas, farms, grasslands",
+  "origin": "Africa",
+  "stats-desc": "Balanced mobility with strong endurance supports survival in open terrain. High song reflects loud alarm calls, while adaptability allows success in both wild and domestic settings.",
+  "ability-desc": "Alarm Chorus reflects its loud group calling behavior when threatened. This ability emphasizes awareness, group defense, and early warning systems against predators."
 },
 {
   "id": 112,
@@ -1433,9 +2031,15 @@
   "wingspan": "15–20 cm",
   "type": ["Songbird", "Forest"],
   "ability": "Hidden Verse",
+  "diet": "Insectivore (insects, larvae)",
+  "rarity": "Common",
   "stats": { "speed": 75, "agility": 85, "song": 90, "endurance": 65, "adaptability": 75 },
   "cry": "./audio/japanese-bush-warbler.ogg",
-  "desc": "A shy bird of dense thickets, best known for its clear, flute-like call. It is more often heard than seen and symbolizes early spring in Japan."
+  "desc": "A shy bird of dense thickets, best known for its clear, flute-like call. It is more often heard than seen and symbolizes early spring in Japan.",
+  "habitat": "Dense shrubs, forests, bamboo thickets",
+  "origin": "East Asia",
+  "stats-desc": "High agility and speed support movement through dense vegetation. Strong song reflects its iconic call, while moderate endurance suits short bursts of activity.",
+  "ability-desc": "Hidden Verse reflects its elusive nature and powerful voice. It sings from concealment, emphasizing stealth, presence, and auditory influence without visual exposure."
 },
 {
   "id": 113,
@@ -1443,11 +2047,17 @@
   "scientific_name": "Anas acuta",
   "weight": "0.5–1.3 kg",
   "wingspan": "80–95 cm",
-  "type": "Waterfowl",
+  "type": ["Waterfowl"],
   "ability": "Needle Glide",
+  "diet": "Omnivore (aquatic plants, seeds, invertebrates)",
+  "rarity": "Uncommon",
   "stats": { "speed": 80, "agility": 75, "song": 45, "endurance": 85, "adaptability": 80 },
   "cry": "./audio/northern-pintail.ogg",
-  "desc": "A sleek migratory duck distinguished by its long pointed tail feathers. It travels vast distances between breeding and wintering grounds across continents."
+  "desc": "A sleek migratory duck distinguished by its long pointed tail feathers. It travels vast distances between breeding and wintering grounds across continents.",
+  "habitat": "Wetlands, lakes, marshes",
+  "origin": "Northern Hemisphere",
+  "stats-desc": "High speed and endurance support long migrations. Good agility aids aerial maneuvering, while adaptability allows seasonal habitat shifts.",
+  "ability-desc": "Needle Glide reflects its streamlined body and efficient flight. It emphasizes speed, precision, and long-distance travel efficiency."
 },
 {
   "id": 114,
@@ -1455,11 +2065,17 @@
   "scientific_name": "Aythya fuligula",
   "weight": "500–1,300 g",
   "wingspan": "65–72 cm",
-  "type": "Waterfowl",
+  "type": ["Waterfowl"],
   "ability": "Deep Diver",
+  "diet": "Omnivore (mollusks, aquatic plants, insects)",
+  "rarity": "Common",
   "stats": { "speed": 70, "agility": 65, "song": 40, "endurance": 85, "adaptability": 80 },
   "cry": "./audio/tufted-duck.ogg",
-  "desc": "A compact diving duck recognized by its small head tuft. It forages underwater for mollusks and aquatic plants in lakes and reservoirs."
+  "desc": "A compact diving duck recognized by its small head tuft. It forages underwater for mollusks and aquatic plants in lakes and reservoirs.",
+  "habitat": "Lakes, reservoirs, wetlands",
+  "origin": "Europe, Asia",
+  "stats-desc": "High endurance supports repeated dives. Moderate speed and agility reflect aquatic movement, while adaptability suits various freshwater habitats.",
+  "ability-desc": "Deep Diver emphasizes its underwater foraging ability. It highlights stamina, resourcefulness, and efficiency beneath the surface."
 },
 {
   "id": 115,
@@ -1467,11 +2083,17 @@
   "scientific_name": "Anas crecca",
   "weight": "250–450 g",
   "wingspan": "53–59 cm",
-  "type": "Waterfowl",
+  "type": ["Waterfowl"],
   "ability": "Flash Flock",
+  "diet": "Omnivore (seeds, aquatic plants, insects)",
+  "rarity": "Common",
   "stats": { "speed": 85, "agility": 85, "song": 50, "endurance": 75, "adaptability": 85 },
   "cry": "./audio/eurasian-teal.ogg",
-  "desc": "A small but fast duck often seen in tight, synchronized flocks. Its agile flight and quick takeoffs make it one of the most dynamic waterfowl species."
+  "desc": "A small but fast duck often seen in tight, synchronized flocks. Its agile flight and quick takeoffs make it one of the most dynamic waterfowl species.",
+  "habitat": "Wetlands, marshes, lakes",
+  "origin": "Europe, Asia",
+  "stats-desc": "High speed and agility support rapid flock movement. Moderate endurance reflects burst flight behavior, while adaptability allows wide distribution.",
+  "ability-desc": "Flash Flock highlights synchronized group flight. This ability emphasizes coordination, speed, and confusion tactics against predators."
 },
 {
   "id": 116,
@@ -1481,9 +2103,15 @@
   "wingspan": "54–60 cm",
   "type": ["Ground", "Generalist"],
   "ability": "Seasonal Shift",
+  "diet": "Herbivore (buds, leaves, berries)",
+  "rarity": "Uncommon",
   "stats": { "speed": 60, "agility": 65, "song": 40, "endurance": 85, "adaptability": 90 },
   "cry": "./audio/rock-ptarmigan.ogg",
-  "desc": "A hardy alpine bird that changes plumage with the seasons, turning white in winter for camouflage against snow. It thrives in cold tundra and mountainous regions where few other birds can survive."
+  "desc": "A hardy alpine bird that changes plumage with the seasons, turning white in winter for camouflage against snow. It thrives in cold tundra and mountainous regions where few other birds can survive.",
+  "habitat": "Tundra, alpine regions",
+  "origin": "Arctic, Northern Hemisphere",
+  "stats-desc": "High endurance and adaptability reflect survival in extreme climates. Moderate mobility supports ground-based life.",
+  "ability-desc": "Seasonal Shift reflects its changing plumage for camouflage. This ability emphasizes environmental adaptation and survival through concealment."
 },
 {
   "id": 117,
@@ -1491,11 +2119,17 @@
   "scientific_name": "Anas poecilorhyncha",
   "weight": "1–1.5 kg",
   "wingspan": "78–90 cm",
-  "type": "Waterfowl",
+  "type": ["Waterfowl"],
   "ability": "Wetland Patrol",
+  "diet": "Omnivore (plants, insects, small aquatic animals)",
+  "rarity": "Common",
   "stats": { "speed": 70, "agility": 65, "song": 45, "endurance": 85, "adaptability": 85 },
   "cry": "./audio/spot-billed-duck.ogg",
-  "desc": "A freshwater duck recognized by the bright yellow tip on its bill. It inhabits lakes, ponds, and marshes across South Asia and is highly adaptable to human-altered wetlands."
+  "desc": "A freshwater duck recognized by the bright yellow tip on its bill. It inhabits lakes, ponds, and marshes across South Asia and is highly adaptable to human-altered wetlands.",
+  "habitat": "Wetlands, lakes, ponds",
+  "origin": "South Asia",
+  "stats-desc": "Balanced stats with strong endurance reflect stable wetland living. Adaptability is high due to tolerance of human environments.",
+  "ability-desc": "Wetland Patrol emphasizes consistent movement through aquatic habitats. It highlights vigilance, stability, and environmental familiarity."
 },
 {
   "id": 118,
@@ -1503,11 +2137,17 @@
   "scientific_name": "Columba leuconota",
   "weight": "350–500 g",
   "wingspan": "60–70 cm",
-  "type": "Columbid",
+  "type": ["Columbid"],
   "ability": "Cliff Glide",
+  "diet": "Herbivore (seeds, grains, vegetation)",
+  "rarity": "Uncommon",
   "stats": { "speed": 75, "agility": 70, "song": 55, "endurance": 80, "adaptability": 75 },
   "cry": "./audio/white-pigeon.ogg",
-  "desc": "A mountain-dwelling pigeon often found nesting along rocky cliffs. Strong and direct in flight, it survives in high-altitude environments where conditions are harsh and unpredictable."
+  "desc": "A mountain-dwelling pigeon often found nesting along rocky cliffs. Strong and direct in flight, it survives in high-altitude environments where conditions are harsh and unpredictable.",
+  "habitat": "Mountains, cliffs",
+  "origin": "Central Asia",
+  "stats-desc": "High endurance supports survival in harsh conditions. Balanced mobility aids navigation in rocky terrain.",
+  "ability-desc": "Cliff Glide reflects controlled flight in mountainous environments. It emphasizes stability, precision, and environmental mastery."
 },
 {
   "id": 119,
@@ -1517,9 +2157,15 @@
   "wingspan": "45–50 cm",
   "type": ["Flightless", "Forest"],
   "ability": "Forest Sprint",
+  "diet": "Omnivore (insects, seeds, small animals)",
+  "rarity": "Rare",
   "stats": { "speed": 55, "agility": 65, "song": 35, "endurance": 75, "adaptability": 50 },
   "cry": "./audio/okinawa-rail.ogg",
-  "desc": "A rare, flightless rail endemic to Okinawa. It moves quickly through dense forest undergrowth and relies on camouflage and speed rather than flight to escape predators."
+  "desc": "A rare, flightless rail endemic to Okinawa. It moves quickly through dense forest undergrowth and relies on camouflage and speed rather than flight to escape predators.",
+  "habitat": "Subtropical forests",
+  "origin": "Okinawa, Japan",
+  "stats-desc": "Moderate agility and endurance support ground movement. Low adaptability reflects restricted range.",
+  "ability-desc": "Forest Sprint emphasizes rapid ground escape. It highlights speed, reaction, and survival without flight."
 },
 {
   "id": 120,
@@ -1527,11 +2173,17 @@
   "scientific_name": "Aix galericulata",
   "weight": "500–700 g",
   "wingspan": "65–75 cm",
-  "type": "Waterfowl",
+  "type": ["Waterfowl"],
   "ability": "Ornamental Display",
+  "diet": "Omnivore (seeds, plants, insects)",
+  "rarity": "Uncommon",
   "stats": { "speed": 75, "agility": 80, "song": 50, "endurance": 75, "adaptability": 70 },
   "cry": "./audio/mandarin-duck.ogg",
-  "desc": "One of the most visually striking ducks in the world, especially the males with their ornate plumage. Native to East Asia, it frequents wooded lakes and rivers."
+  "desc": "One of the most visually striking ducks in the world, especially the males with their ornate plumage. Native to East Asia, it frequents wooded lakes and rivers.",
+  "habitat": "Wooded lakes, rivers",
+  "origin": "East Asia",
+  "stats-desc": "Balanced stats reflect versatile movement and display behavior. Moderate adaptability due to habitat preference.",
+  "ability-desc": "Ornamental Display reflects its elaborate plumage used in courtship. It emphasizes visual appeal, attraction, and reproductive signaling."
 },
 {
   "id": 121,
@@ -1541,9 +2193,15 @@
   "wingspan": "150–200 cm",
   "type": ["Flightless", "Ground"],
   "ability": "Desert Sprint",
+  "diet": "Omnivore (plants, seeds, insects)",
+  "rarity": "Uncommon",
   "stats": { "speed": 100, "agility": 70, "song": 15, "endurance": 95, "adaptability": 85 },
   "cry": "./audio/ostrich.ogg",
-  "desc": "The largest living bird on Earth, incapable of flight but capable of incredible running speeds. Its powerful legs allow it to outrun many predators across open savannas."
+  "desc": "The largest living bird on Earth, incapable of flight but capable of incredible running speeds. Its powerful legs allow it to outrun many predators across open savannas.",
+  "habitat": "Savannas, deserts",
+  "origin": "Africa",
+  "stats-desc": "Extreme speed reflects unmatched running ability. High endurance supports long-distance travel. Low song aligns with minimal vocal behavior, while adaptability is strong in harsh climates.",
+  "ability-desc": "Desert Sprint emphasizes its incredible running speed. It escapes predators through sustained high-speed movement, highlighting power, stamina, and survival in open terrain."
 },
 {
   "id": 122,
@@ -1553,9 +2211,15 @@
   "wingspan": "120–150 cm",
   "type": ["Extinct", "Flightless"],
   "ability": "Ancient Titan",
+  "diet": "Herbivore (leaves, twigs, fruits)",
+  "rarity": "Extinct",
   "stats": { "speed": 40, "agility": 35, "song": 10, "endurance": 90, "adaptability": 20 },
   "cry": "./audio/moa.ogg",
-  "desc": "A group of giant flightless birds once native to New Zealand. They lacked even functional wings and were driven to extinction by human hunting centuries ago."
+  "desc": "A group of giant flightless birds once native to New Zealand. They lacked even functional wings and were driven to extinction by human hunting centuries ago.",
+  "habitat": "Forests, shrublands",
+  "origin": "New Zealand",
+  "stats-desc": "Low speed and agility reflect massive size. High endurance supported long-term survival. Very low adaptability reflects vulnerability to environmental change and human impact.",
+  "ability-desc": "Ancient Titan represents its massive size and dominance in prehistoric ecosystems. It emphasizes strength, endurance, and ecological presence before extinction."
 },
 {
   "id": 123,
@@ -1565,9 +2229,15 @@
   "wingspan": "80–100 cm",
   "type": ["Extinct", "Flightless"],
   "ability": "Island Naivety",
+  "diet": "Omnivore (fruits, seeds, small animals)",
+  "rarity": "Extinct",
   "stats": { "speed": 30, "agility": 30, "song": 20, "endurance": 60, "adaptability": 10 },
   "cry": "./audio/dodo.ogg",
-  "desc": "A flightless island bird from Mauritius that became extinct in the 17th century. With no natural predators before human arrival, it evolved without fear and became a symbol of extinction."
+  "desc": "A flightless island bird from Mauritius that became extinct in the 17th century. With no natural predators before human arrival, it evolved without fear and became a symbol of extinction.",
+  "habitat": "Forests, coastal areas",
+  "origin": "Mauritius",
+  "stats-desc": "Low mobility reflects flightlessness and isolation. Moderate endurance supported stable island life. Extremely low adaptability reflects inability to respond to new threats.",
+  "ability-desc": "Island Naivety highlights its lack of fear toward predators. This ability emphasizes vulnerability, innocence, and evolutionary isolation."
 },
 {
   "id": 124,
@@ -1577,9 +2247,15 @@
   "wingspan": "62–72 cm",
   "type": ["Columbid", "Urban"],
   "ability": "City Navigator",
+  "diet": "Omnivore (grains, seeds, scraps)",
+  "rarity": "Common",
   "stats": { "speed": 85, "agility": 80, "song": 55, "endurance": 90, "adaptability": 100 },
   "cry": "./audio/rock-pigeon.ogg",
-  "desc": "Originally a cliff-nesting species, the rock pigeon has adapted exceptionally well to urban life. It is one of the most widespread and successful birds on Earth, thriving in cities worldwide."
+  "desc": "Originally a cliff-nesting species, the rock pigeon has adapted exceptionally well to urban life. It is one of the most widespread and successful birds on Earth, thriving in cities worldwide.",
+  "habitat": "Urban areas, cliffs",
+  "origin": "Europe, North Africa, West Asia",
+  "stats-desc": "High speed and endurance support long-distance navigation. Strong adaptability reflects urban success. Balanced agility aids maneuvering through complex environments.",
+  "ability-desc": "City Navigator reflects its exceptional homing ability and urban survival skills. It emphasizes navigation, memory, and adaptation to human environments."
 },
 {
   "id": 125,
@@ -1589,6 +2265,8 @@
   "wingspan": "175–195 cm",
   "type": "Raptor",
   "ability": "Forked Glide",
+  "diet": "Carnivore (small animals, carrion)",
+  "rarity": "Uncommon",
   "stats": { 
     "speed": 80, 
     "agility": 85, 
@@ -1597,6 +2275,10 @@
     "adaptability": 85 
   },
   "cry": "./audio/red-kite.ogg",
-  "desc": "A large, graceful raptor recognized by its deeply forked tail and reddish-brown plumage. It soars effortlessly on thermals with minimal wingbeats, scanning the ground for small prey or carrion. Once heavily persecuted, it has made a remarkable comeback in parts of Europe."
-}
-]
+  "desc": "A large, graceful raptor recognized by its deeply forked tail and reddish-brown plumage. It soars effortlessly on thermals with minimal wingbeats, scanning the ground for small prey or carrion. Once heavily persecuted, it has made a remarkable comeback in parts of Europe.",
+  "habitat": "Woodlands, farmlands",
+  "origin": "Europe",
+  "stats-desc": "High endurance supports long soaring flights. Strong agility allows precise aerial control. Moderate song reflects typical raptor vocalization.",
+  "ability-desc": "Forked Glide highlights its tail-assisted maneuverability. It allows precise steering while soaring, emphasizing control, efficiency, and aerial dominance."
+}]
+
