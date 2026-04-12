@@ -138,7 +138,7 @@ function displayBirds(birds) {
       </div>
 
       <div class="img-wrap">
-        <img src="./icons2/${bird.id}.png" 
+        <img src="./icons/${bird.id}.png" 
              alt="${bird.name}" 
              width="210" 
              height="210"/>
