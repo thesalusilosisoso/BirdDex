@@ -143,8 +143,18 @@ function displayBirdDetails(bird) {
 
   /* IMAGE */
   const imageElement = document.querySelector(".detail-img-wrapper img");
-  imageElement.src = `./icons2/${id}.png`;
+  imageElement.src = `./icons/${id}.png`;
   imageElement.alt = formattedName;
+
+/* =========================
+   IMAGE BOUNCE
+========================= */
+
+imageElement.addEventListener("click", () => {
+  imageElement.classList.remove("bounce"); // reset if spam clicked
+  void imageElement.offsetWidth; // force reflow (important)
+  imageElement.classList.add("bounce");
+});
 
   /* WEIGHT + WINGSPAN */
   document.querySelector(".weight").textContent = weight;
@@ -307,6 +317,62 @@ function displayBirdDetails(bird) {
   });
 
   setTypeBackgroundColor(types[0]);
+
+  /* =========================
+   MORE INFO MODAL
+========================= */
+
+const moreBtn = document.querySelector(".more-info-btn");
+const overlay = document.querySelector(".info-overlay");
+const closeBtn = document.querySelector(".close-btn");
+
+moreBtn.onclick = () => {
+  overlay.classList.add("active");
+
+  document.querySelector(".info-habitat").textContent = "Habitat: " + bird.habitat;
+  document.querySelector(".info-origin").textContent = "Origin: " + bird.origin;
+  document.querySelector(".info-diet").textContent = "Diet: " + bird.diet;
+  document.querySelector(".info-rarity").textContent = "Rarity: " + bird.rarity;
+  document.querySelector(".info-stats-desc").textContent = bird["stats-desc"];
+};
+
+const modal = overlay.querySelector(".info-modal");
+
+closeBtn.onclick = () => {
+  closeModal(overlay, modal);
+};
+
+
+/* =========================
+   ABILITY CLICK MODAL
+========================= */
+
+function closeModal(overlay, modal) {
+  modal.classList.add("closing");
+
+  setTimeout(() => {
+    overlay.classList.remove("active");
+    modal.classList.remove("closing");
+  }, 200);
+}
+
+const abilityTextEl = abilityContainer.querySelector("p");
+
+const abilityOverlay = document.querySelector(".ability-overlay");
+const abilityClose = document.querySelector(".ability-close");
+
+abilityTextEl.style.cursor = "pointer";
+
+abilityTextEl.onclick = () => {
+  abilityOverlay.classList.add("active");
+  document.querySelector(".ability-desc-text").textContent = bird["ability-desc"];
+};
+
+const abilityModal = abilityOverlay.querySelector(".info-modal");
+
+abilityClose.onclick = () => {
+  closeModal(abilityOverlay, abilityModal);
+};
 }
 
 /* =========================
